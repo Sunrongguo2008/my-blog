@@ -31,5 +31,25 @@
       
     </item>
     
+    <item>
+      <title>Linux</title>
+      <link>http://localhost:1313/tags/linux/</link>
+      <pubDate>Mon, 11 Aug 2025 00:00:00 +0000</pubDate>
+      <author>sunong@aliyun.com (Sunong2008)</author>
+      <guid>http://localhost:1313/tags/linux/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Blog</title>
+      <link>http://localhost:1313/tags/blog/</link>
+      <pubDate>Sat, 09 Aug 2025 00:00:00 +0000</pubDate>
+      <author>sunong@aliyun.com (Sunong2008)</author>
+      <guid>http://localhost:1313/tags/blog/</guid>
+      <description></description>
+      
+    </item>
+    
   </channel>
 </rss>

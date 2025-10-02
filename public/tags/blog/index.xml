@@ -1,35 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Sunong2008&#39;s Blog</title>
-    <link>http://localhost:1313/posts/</link>
-    <description>Recent content in Posts on Sunong2008&#39;s Blog</description>
+    <title>Blog on Sunong2008&#39;s Blog</title>
+    <link>http://localhost:1313/tags/blog/</link>
+    <description>Recent content in Blog on Sunong2008&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <managingEditor>sunong@aliyun.com (Sunong2008)</managingEditor>
     <webMaster>sunong@aliyun.com (Sunong2008)</webMaster>
     <copyright>© 2025 Sunong2008</copyright>
-    <lastBuildDate>Thu, 02 Oct 2025 06:20:10 +0800</lastBuildDate><atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
-    
-    <item>
-      <title>Hello World</title>
-      <link>http://localhost:1313/posts/hello-world/</link>
-      <pubDate>Thu, 02 Oct 2025 06:20:10 +0800</pubDate>
-      <author>sunong@aliyun.com (Sunong2008)</author>
-      <guid>http://localhost:1313/posts/hello-world/</guid>
-      <description></description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/hello-world/featured_test.png" />
-    </item>
-    
-    <item>
-      <title>OBS 无法调用intel的qsv（Arch）</title>
-      <link>http://localhost:1313/posts/obs-%E6%97%A0%E6%B3%95%E8%B0%83%E7%94%A8intel%E7%9A%84qsvarch/</link>
-      <pubDate>Mon, 11 Aug 2025 00:00:00 +0000</pubDate>
-      <author>sunong@aliyun.com (Sunong2008)</author>
-      <guid>http://localhost:1313/posts/obs-%E6%97%A0%E6%B3%95%E8%B0%83%E7%94%A8intel%E7%9A%84qsvarch/</guid>
-      <description></description>
-      
-    </item>
+    <lastBuildDate>Sat, 09 Aug 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/blog/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>linux应用程序无法开机自启可能的解决方案</title>
@@ -42,31 +22,11 @@
     </item>
     
     <item>
-      <title>关于timeshift和swap的恩怨问题</title>
-      <link>http://localhost:1313/posts/%E5%85%B3%E4%BA%8Etimeshift%E5%92%8Cswap%E7%9A%84%E6%81%A9%E6%80%A8%E9%97%AE%E9%A2%98/</link>
-      <pubDate>Sat, 09 Aug 2025 00:00:00 +0000</pubDate>
-      <author>sunong@aliyun.com (Sunong2008)</author>
-      <guid>http://localhost:1313/posts/%E5%85%B3%E4%BA%8Etimeshift%E5%92%8Cswap%E7%9A%84%E6%81%A9%E6%80%A8%E9%97%AE%E9%A2%98/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
       <title>btrfs下不显示timeshift创建的快照／创建快照失败</title>
       <link>http://localhost:1313/posts/btrfs%E4%B8%8B%E4%B8%8D%E6%98%BE%E7%A4%BAtimeshift%E5%88%9B%E5%BB%BA%E7%9A%84%E5%BF%AB%E7%85%A7%E5%88%9B%E5%BB%BA%E5%BF%AB%E7%85%A7%E5%A4%B1%E8%B4%A5/</link>
       <pubDate>Thu, 07 Aug 2025 00:00:00 +0000</pubDate>
       <author>sunong@aliyun.com (Sunong2008)</author>
       <guid>http://localhost:1313/posts/btrfs%E4%B8%8B%E4%B8%8D%E6%98%BE%E7%A4%BAtimeshift%E5%88%9B%E5%BB%BA%E7%9A%84%E5%BF%AB%E7%85%A7%E5%88%9B%E5%BB%BA%E5%BF%AB%E7%85%A7%E5%A4%B1%E8%B4%A5/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>timeshift无法删除快照</title>
-      <link>http://localhost:1313/posts/timeshift%E6%97%A0%E6%B3%95%E5%88%A0%E9%99%A4%E5%BF%AB%E7%85%A7/</link>
-      <pubDate>Thu, 07 Aug 2025 00:00:00 +0000</pubDate>
-      <author>sunong@aliyun.com (Sunong2008)</author>
-      <guid>http://localhost:1313/posts/timeshift%E6%97%A0%E6%B3%95%E5%88%A0%E9%99%A4%E5%BF%AB%E7%85%A7/</guid>
       <description></description>
       
     </item>
@@ -87,16 +47,6 @@
       <pubDate>Tue, 05 Aug 2025 00:00:00 +0000</pubDate>
       <author>sunong@aliyun.com (Sunong2008)</author>
       <guid>http://localhost:1313/posts/btrfs%E5%8E%8B%E7%BC%A9%E7%A9%BA%E9%97%B4%E5%8D%A0%E7%94%A8%E5%8F%98%E5%A4%A7/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>swapon 失败：无效的参数 的解决方法</title>
-      <link>http://localhost:1313/posts/swapon-%E5%A4%B1%E8%B4%A5%E6%97%A0%E6%95%88%E7%9A%84%E5%8F%82%E6%95%B0-%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/</link>
-      <pubDate>Tue, 05 Aug 2025 00:00:00 +0000</pubDate>
-      <author>sunong@aliyun.com (Sunong2008)</author>
-      <guid>http://localhost:1313/posts/swapon-%E5%A4%B1%E8%B4%A5%E6%97%A0%E6%95%88%E7%9A%84%E5%8F%82%E6%95%B0-%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/</guid>
       <description></description>
       
     </item>

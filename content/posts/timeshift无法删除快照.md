@@ -4,7 +4,7 @@ draft = false
 title = 'timeshift无法删除快照'
 tags = ["linux"]
 +++
-2025-08-07 17:08
+
 ## 发现问题
 
 ```bash

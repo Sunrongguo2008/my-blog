@@ -4,8 +4,6 @@ draft = false
 title = 'linux开机黑屏的一种解决方案'
 tags = ["linux", "blog"]
 +++
-
-2025-08-03 09:11
 ## 1. 特点
 
 **linuxmint (ubuntu)** ：  
@@ -16,15 +14,10 @@ tags = ["linux", "blog"]
 安装完系统开机就黑屏，其他未知  
 **临时解决方案**：  
 在 grub 中，对着启动项按下 e，找到以 ` linux /boot/vmlinuz...` 开头的行，在行尾添加 `dis_ucode_ldr` 可以开机
-
 ## 2. 原因
-
 Intel 微代码（Microcode）更新与内核或硬件兼容性冲突
-
 ## 3. 解决方法
-
 ### 3.1 方法 1：改 grub（治标不治本，不过所有 linux 都可以用）：
-
 1. **编辑 GRUB 配置文件**：
 
 ```bash

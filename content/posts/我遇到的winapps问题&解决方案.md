@@ -5,7 +5,7 @@ title = '我遇到的winapps问题&解决方案'
 tags = ["linux", "blog"]
 +++
 
-2025-08-06 21:43
+
 
 都是我折腾 [winapps](https://github.com/winapps-org/winapps) 时遇到的问题，费了三整天才慢慢解决，故分享出来让大家少踩坑。
 

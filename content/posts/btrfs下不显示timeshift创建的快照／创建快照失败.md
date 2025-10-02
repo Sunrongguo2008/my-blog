@@ -5,7 +5,7 @@ title = 'btrfs下不显示timeshift创建的快照／创建快照失败'
 tags = ["linux", "blog"]
 +++
 
-2025-08-07 15:23
+
 ## 1. 原因
 
 [英雄在这里](https://bbs.deepin.org/zh/post/270814)

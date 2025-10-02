@@ -4,7 +4,7 @@ draft = false
 title = '关于timeshift和swap的恩怨问题'
 tags = ["linux"]
 +++
-2025-08-09 10:48
+
 
 在 btrfs 下，创建 swap 文件而不是 swap 分区时：
 

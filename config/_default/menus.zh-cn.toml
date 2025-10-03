@@ -11,9 +11,10 @@
 # ordered by weight from lowest to highest.
 
 [[main]]
-  name = "文章列表(Post)"
+  pre = "list" # 图标 https://blowfish.page/zh-cn/samples/icons/
+  name = "全部文章"
   pageRef = "posts"
-  weight = 10 # [INFO]控制菜单项的显示顺序，数值越小越靠前 
+  weight = 40 # [INFO]控制菜单项的显示顺序，数值越小越靠前 
 
 #[[main]]
 #  name = "Parent"
@@ -48,30 +49,34 @@
 #  weight = 20
 
 [[main]]
-  name = "Tags"
+  pre = "eye"
+  name = "分类"
   pageRef = "tags"
-  weight = 30
+  weight = 15
 
 [[main]]
+#pre = "code"
   name = "Linux"
   pageRef = "tags/linux"
   weight = 20
   
 [[main]]  
+#pre = "dribbble"
   name = "日常"
   pageRef = "tags/日常"
   weight = 20
   
-[[main]]  
-  name = "测试"
-  pageRef = "tags/测试"  
-  weight = 20
+#[[main]] 
+#  pre = "check"
+#  name = "测试"
+#  pageRef = "tags/测试"  
+#  weight = 20
 
 
 [[main]]
   pre = "github"
-  name = "GitHub"
-  url = "https://github.com/sunrongguo2008"
+# name = "GitHub"
+  url = "https://github.com/Sunrongguo2008/my-blog"
   weight = 100
 
 

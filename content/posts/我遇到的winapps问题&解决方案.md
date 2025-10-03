@@ -159,13 +159,13 @@ reg add "HKLM\SYSTEM\CurrentControlSet\Control\Terminal Server\WinStations\RDP-T
 
 直接双击打开文件（文件挂载在 `/run/media/s/松果U盘/DeepSeek.pptx`）
 
-![屏幕截图_20250806_213526](https://img2024.cnblogs.com/blog/3684112/202508/3684112-20250809104931535-65971359.png "图 1")
+![屏幕截图_20250806_213526](https://img2024.cnblogs.com/blog/3684112/202508/3684112-20250809104931535-65971359.png)
 
 但是用①选择文件打开，正常。之后直接点②也能直接打开。
 
 奇了怪了
 
-![image](https://img2024.cnblogs.com/blog/3684112/202508/3684112-20250809104932461-21259550.png "图 2")
+![image](https://img2024.cnblogs.com/blog/3684112/202508/3684112-20250809104932461-21259550.png)
 
 ### 4.2 分析问题
 

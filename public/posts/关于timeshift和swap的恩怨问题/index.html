@@ -138,7 +138,7 @@
     "keywords": ["linux"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "55"
+    "wordCount": "53"
   }]
   </script>
 
@@ -622,7 +622,7 @@
   <div class="flex flex-row flex-wrap items-center">
     
     
-      <time datetime="2025-08-09T00:00:00&#43;00:00">2025-8-9</time><span class="px-2 text-primary-500">&middot;</span><span>55 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">1 分钟</span>
+      <time datetime="2025-08-09T00:00:00&#43;00:00">2025-8-9</time><span class="px-2 text-primary-500">&middot;</span><span>53 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">1 分钟</span>
     
 
     
@@ -744,8 +744,7 @@
         
 
         <div class="article-content max-w-prose mb-20">
-          <p>2025-08-09 10:48</p>
-<p>在 btrfs 下，创建 swap 文件而不是 swap 分区时：</p>
+          <p>在 btrfs 下，创建 swap 文件而不是 swap 分区时：</p>
 <p><strong>把 swap 文件放到</strong>​ <strong>​ <code>/swap</code> ​</strong>​<strong>子卷中：</strong>  因为 timeshift 不会备份 <code>/swap</code> 子卷，导致恢复快照时，swap 文件 <code>/swap/swapfile</code> 会消失<br>
 <strong>不把 swap 文件放到子卷中：</strong>  timeshift 备份时，swapfile 被内核使用，会导致 <code>E: ERROR: Could not create subvolume: Text file busy</code>，导致无法创建快照，出现<a
   href="https://forum.archlinuxcn.org/t/topic/14195"

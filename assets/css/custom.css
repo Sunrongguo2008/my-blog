@@ -69,11 +69,16 @@
 }  
   
 /* 设置全局字体（除代码块外） */  
+/*
 html {  
     font-family: 'LXGWWenKaiScreen', ui-sans-serif, system-ui, sans-serif;  
 }  
-  
+*/
+
 /* 设置代码块字体 */  
+/*
+ *
 code, kbd, samp, pre {  
     font-family: 'MapleMono-NF-CN', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !important;  
 }
+*/

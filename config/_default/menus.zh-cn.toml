@@ -11,9 +11,9 @@
 # ordered by weight from lowest to highest.
 
 [[main]]
-  name = "Blog"
+  name = "文章列表(Post)"
   pageRef = "posts"
-  weight = 10
+  weight = 10 # [INFO]控制菜单项的显示顺序，数值越小越靠前 
 
 #[[main]]
 #  name = "Parent"
@@ -42,7 +42,7 @@
 #  pageRef = "categories/awesome"
 #  weight = 20
 
-#[[maiin]]
+#[[main]]
 #  name = "Categories"
 #  pageRef = "categories"
 #  weight = 20
@@ -52,12 +52,27 @@
   pageRef = "tags"
   weight = 30
 
+[[main]]
+  name = "Linux"
+  pageRef = "tags/linux"
+  weight = 20
+  
+[[main]]  
+  name = "日常"
+  pageRef = "tags/日常"
+  weight = 20
+  
+[[main]]  
+  name = "测试"
+  pageRef = "tags/测试"  
+  weight = 20
+
 
 [[main]]
   pre = "github"
   name = "GitHub"
   url = "https://github.com/sunrongguo2008"
-  weight = 30
+  weight = 100
 
 
 # -- Footer Menu --

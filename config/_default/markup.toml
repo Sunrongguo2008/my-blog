@@ -16,5 +16,6 @@
   noClasses = false
 
 [tableOfContents]
-  startLevel = 2
-  endLevel = 4
+  startLevel = 1
+  endLevel = 6
+# 在侧边栏索引H1到H6

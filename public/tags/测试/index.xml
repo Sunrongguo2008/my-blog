@@ -9,16 +9,26 @@
     <managingEditor>sunong@aliyun.com (Sunong2008)</managingEditor>
     <webMaster>sunong@aliyun.com (Sunong2008)</webMaster>
     <copyright>© 2025 Sunong2008</copyright>
-    <lastBuildDate>Thu, 02 Oct 2025 06:20:10 +0800</lastBuildDate><atom:link href="//localhost:1313/tags/%E6%B5%8B%E8%AF%95/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 03 Oct 2025 00:00:00 +0000</lastBuildDate><atom:link href="//localhost:1313/tags/%E6%B5%8B%E8%AF%95/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>Hello World</title>
-      <link>//localhost:1313/posts/hello-world/</link>
+      <title>深入探索 Markdown 的世界</title>
+      <link>//localhost:1313/posts/%E6%B5%8B%E8%AF%95/%E6%B7%B1%E5%85%A5%E6%8E%A2%E7%B4%A2-markdown-%E7%9A%84%E4%B8%96%E7%95%8C/</link>
+      <pubDate>Fri, 03 Oct 2025 00:00:00 +0000</pubDate>
+      <author>sunong@aliyun.com (Sunong2008)</author>
+      <guid>//localhost:1313/posts/%E6%B5%8B%E8%AF%95/%E6%B7%B1%E5%85%A5%E6%8E%A2%E7%B4%A2-markdown-%E7%9A%84%E4%B8%96%E7%95%8C/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Hello Blowfish</title>
+      <link>//localhost:1313/posts/%E6%B5%8B%E8%AF%95/hello-blowfish/</link>
       <pubDate>Thu, 02 Oct 2025 06:20:10 +0800</pubDate>
       <author>sunong@aliyun.com (Sunong2008)</author>
-      <guid>//localhost:1313/posts/hello-world/</guid>
+      <guid>//localhost:1313/posts/%E6%B5%8B%E8%AF%95/hello-blowfish/</guid>
       <description></description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="//localhost:1313/posts/hello-world/featured_test.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="//localhost:1313/posts/%E6%B5%8B%E8%AF%95/hello-blowfish/featured_test.png" />
     </item>
     
   </channel>

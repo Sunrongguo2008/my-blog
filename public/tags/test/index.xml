@@ -12,13 +12,13 @@
     <lastBuildDate>Thu, 02 Oct 2025 06:20:10 +0800</lastBuildDate><atom:link href="//localhost:1313/tags/test/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>Hello World</title>
-      <link>//localhost:1313/posts/hello-world/</link>
+      <title>Hello Blowfish</title>
+      <link>//localhost:1313/posts/hello-blowfish/</link>
       <pubDate>Thu, 02 Oct 2025 06:20:10 +0800</pubDate>
       <author>sunong@aliyun.com (Sunong2008)</author>
-      <guid>//localhost:1313/posts/hello-world/</guid>
+      <guid>//localhost:1313/posts/hello-blowfish/</guid>
       <description></description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="//localhost:1313/posts/hello-world/featured_test.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="//localhost:1313/posts/hello-blowfish/featured_test.png" />
     </item>
     
   </channel>

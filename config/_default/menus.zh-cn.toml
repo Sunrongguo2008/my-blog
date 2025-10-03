@@ -49,8 +49,8 @@
 #  weight = 20
 
 [[main]]
-  pre = "eye"
-  name = "分类"
+  pre = "tag"
+  name = "标签分类"
   pageRef = "tags"
   weight = 15
 

@@ -17,7 +17,7 @@ title = "Sunong2008's Blog"
  [params.author]
    name = "Sunong2008"
    email = "sunong@aliyun.com"
-   image = "img/author.jpg"
+   image = "img/author.webp"
    imageQuality = 96
    headline = "Only a human"
    bio = "A little bit about you"

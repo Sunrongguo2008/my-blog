@@ -50,7 +50,7 @@
 
 [[main]]
   pre = "tag"
-  name = "标签分类"
+  name = "分类标签"
   pageRef = "tags"
   weight = 15
 

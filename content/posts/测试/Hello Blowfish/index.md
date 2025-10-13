@@ -4,4 +4,4 @@ draft = false
 title = 'Hello Blowfish'
 tags = ["测试"]
 +++
-## 用[Blowfish](https://blowfish.page/zh-cn/)创建了博客！泰裤辣！
+## 用[Blowfish](https://blowfish.page/zh-cn/)创建了博客！泰裤辣！😄

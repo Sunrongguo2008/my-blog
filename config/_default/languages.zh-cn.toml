@@ -17,9 +17,9 @@ title = "Sunong2008's Blog"
  [params.author]
    name = "Sunong2008"
    email = "sunong@aliyun.com"
-   image = "img/author.webp"
+   image = "img/author.avif"
    imageQuality = 96
-   headline = "Only a human"
+   headline = "Only a robot 🤖"
    bio = "A little bit about you"
    links = [
      { email = "mailto:sunong@aliyun.com" },

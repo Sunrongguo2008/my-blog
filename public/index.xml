@@ -9,7 +9,17 @@
     <managingEditor>sunong@aliyun.com (Sunong2008)</managingEditor>
     <webMaster>sunong@aliyun.com (Sunong2008)</webMaster>
     <copyright>© 2025 Sunong2008</copyright>
-    <lastBuildDate>Fri, 03 Oct 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 14 Oct 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>理水(节选)</title>
+      <link>http://localhost:1313/posts/%E6%97%A5%E5%B8%B8/%E7%90%86%E6%B0%B4%E8%8A%82%E9%80%89/</link>
+      <pubDate>Tue, 14 Oct 2025 00:00:00 +0000</pubDate>
+      <author>sunong@aliyun.com (Sunong2008)</author>
+      <guid>http://localhost:1313/posts/%E6%97%A5%E5%B8%B8/%E7%90%86%E6%B0%B4%E8%8A%82%E9%80%89/</guid>
+      <description></description>
+      
+    </item>
     
     <item>
       <title>深入探索 Markdown 的世界</title>

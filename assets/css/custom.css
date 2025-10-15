@@ -58,7 +58,7 @@
 
 
 /* 导入字体 */  
-@font-face {  
+/*@font-face {  
     font-family: 'LXGWWenKaiScreen';  
     src: url('/fonts/LXGWWenKaiScreen.ttf');  
 }  
@@ -67,7 +67,7 @@
     font-family: 'MapleMono-NF-CN';  
     src: url('/fonts/MapleMono-NF-CN-Regular.ttf');  
 }  
-  
+  */
 /* 设置全局字体（除代码块外） */  
 /*
 html {  
@@ -82,3 +82,11 @@ code, kbd, samp, pre {
     font-family: 'MapleMono-NF-CN', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !important;  
 }
 */
+
+
+page {
+  font-family: "LXGW WenKai";
+  font-weight: normal;
+}
+
+

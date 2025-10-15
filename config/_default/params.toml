@@ -95,7 +95,7 @@ fingerprintAlgorithm = "sha512" # Valid values are "sha512" (default), "sha384",
 
 [list]
   showHero = true
-  heroStyle = "background" # valid options: basic, big, background, thumbAndBackground
+  heroStyle = "thumbAndBackground" # valid options: basic, big, background, thumbAndBackground
   layoutBackgroundBlur = true # only used when heroStyle equals background or thumbAndBackground
   layoutBackgroundHeaderSpace = true # only used when heroStyle equals background
   showBreadcrumbs = true
@@ -116,7 +116,7 @@ fingerprintAlgorithm = "sha512" # Valid values are "sha512" (default), "sha384",
 [taxonomy]
   showTermCount = true
   showHero = true
-  heroStyle = "background" # valid options: basic, big, background, thumbAndBackground
+  heroStyle = "thumbAndBackground" # valid options: basic, big, background, thumbAndBackground
   showBreadcrumbs = true
   showViews = false
   showLikes = false
@@ -125,7 +125,7 @@ fingerprintAlgorithm = "sha512" # Valid values are "sha512" (default), "sha384",
 
 [term]
   showHero = true
-  heroStyle = "background" # valid options: basic, big, background, thumbAndBackground
+  heroStyle = "thumbAndBackground" # valid options: basic, big, background, thumbAndBackground
   showBreadcrumbs = true
   showViews = false
   showLikes = false
@@ -179,6 +179,3 @@ fingerprintAlgorithm = "sha512" # Valid values are "sha512" (default), "sha384",
 [advertisement]
   # adsense = ""
 
-[security]
-  [security.http]
-    mediaTypes = ['^image/avif$', '^application/vnd\.api\+json$'] # [INFO]改进AVIF支持

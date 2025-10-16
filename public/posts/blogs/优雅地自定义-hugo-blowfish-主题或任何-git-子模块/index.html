@@ -15,20 +15,22 @@
 
   
   
-    <title>btrfs下不显示timeshift创建的快照／创建快照失败 &middot; Sunong2008&#39;s Blog</title>
-    <meta name="title" content="btrfs下不显示timeshift创建的快照／创建快照失败 &middot; Sunong2008&#39;s Blog">
+    <title>优雅地自定义 Hugo Blowfish 主题（或任何 Git 子模块） &middot; Sunong2008&#39;s Blog</title>
+    <meta name="title" content="优雅地自定义 Hugo Blowfish 主题（或任何 Git 子模块） &middot; Sunong2008&#39;s Blog">
   
 
   
   
+    <meta name="description" content="教你如何优雅地自定义 Hugo Blowfish 主题：通过 Fork 子模块保存修改、保持与上游同步，解决 Git 子模块推送冲突。适用于所有需要自定义第三方主题或依赖的场景。">
   
-    <meta name="keywords" content="linux,">
+  
+    <meta name="keywords" content="blog,">
   
   
     <meta name="robots" content="all">
   
   
-  <link rel="canonical" href="http://localhost:1313/posts/linux/btrfs%E4%B8%8B%E4%B8%8D%E6%98%BE%E7%A4%BAtimeshift%E5%88%9B%E5%BB%BA%E7%9A%84%E5%BF%AB%E7%85%A7%E5%88%9B%E5%BB%BA%E5%BF%AB%E7%85%A7%E5%A4%B1%E8%B4%A5/">
+  <link rel="canonical" href="http://localhost:1313/posts/blogs/%E4%BC%98%E9%9B%85%E5%9C%B0%E8%87%AA%E5%AE%9A%E4%B9%89-hugo-blowfish-%E4%B8%BB%E9%A2%98%E6%88%96%E4%BB%BB%E4%BD%95-git-%E5%AD%90%E6%A8%A1%E5%9D%97/">
   
 
   
@@ -50,19 +52,21 @@
   
 
   
-  <meta property="og:url" content="http://localhost:1313/posts/linux/btrfs%E4%B8%8B%E4%B8%8D%E6%98%BE%E7%A4%BAtimeshift%E5%88%9B%E5%BB%BA%E7%9A%84%E5%BF%AB%E7%85%A7%E5%88%9B%E5%BB%BA%E5%BF%AB%E7%85%A7%E5%A4%B1%E8%B4%A5/">
+  <meta property="og:url" content="http://localhost:1313/posts/blogs/%E4%BC%98%E9%9B%85%E5%9C%B0%E8%87%AA%E5%AE%9A%E4%B9%89-hugo-blowfish-%E4%B8%BB%E9%A2%98%E6%88%96%E4%BB%BB%E4%BD%95-git-%E5%AD%90%E6%A8%A1%E5%9D%97/">
   <meta property="og:site_name" content="Sunong2008&#39;s Blog">
-  <meta property="og:title" content="btrfs下不显示timeshift创建的快照／创建快照失败">
+  <meta property="og:title" content="优雅地自定义 Hugo Blowfish 主题（或任何 Git 子模块）">
+  <meta property="og:description" content="教你如何优雅地自定义 Hugo Blowfish 主题：通过 Fork 子模块保存修改、保持与上游同步，解决 Git 子模块推送冲突。适用于所有需要自定义第三方主题或依赖的场景。">
   <meta property="og:locale" content="zh_cn">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
-    <meta property="article:published_time" content="2025-08-07T00:00:00+00:00">
-    <meta property="article:modified_time" content="2025-08-07T00:00:00+00:00">
-    <meta property="article:tag" content="Linux">
+    <meta property="article:published_time" content="2025-10-16T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-10-16T00:00:00+00:00">
+    <meta property="article:tag" content="Blog">
 
   
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="btrfs下不显示timeshift创建的快照／创建快照失败">
+  <meta name="twitter:title" content="优雅地自定义 Hugo Blowfish 主题（或任何 Git 子模块）">
+  <meta name="twitter:description" content="教你如何优雅地自定义 Hugo Blowfish 主题：通过 Fork 子模块保存修改、保持与上游同步，解决 Git 子模块推送冲突。适用于所有需要自定义第三方主题或依赖的场景。">
 
   
   
@@ -213,26 +217,26 @@
     "@context": "https://schema.org",
     "@type": "Article",
     "articleSection": "Posts",
-    "name": "btrfs下不显示timeshift创建的快照／创建快照失败",
-    "headline": "btrfs下不显示timeshift创建的快照／创建快照失败",
-    
+    "name": "优雅地自定义 Hugo Blowfish 主题（或任何 Git 子模块）",
+    "headline": "优雅地自定义 Hugo Blowfish 主题（或任何 Git 子模块）",
+    "description": "教你如何优雅地自定义 Hugo Blowfish 主题：通过 Fork 子模块保存修改、保持与上游同步，解决 Git 子模块推送冲突。适用于所有需要自定义第三方主题或依赖的场景。",
     
     "inLanguage": "zh-cn",
-    "url" : "http:\/\/localhost:1313\/posts\/linux\/btrfs%E4%B8%8B%E4%B8%8D%E6%98%BE%E7%A4%BAtimeshift%E5%88%9B%E5%BB%BA%E7%9A%84%E5%BF%AB%E7%85%A7%E5%88%9B%E5%BB%BA%E5%BF%AB%E7%85%A7%E5%A4%B1%E8%B4%A5\/",
+    "url" : "http:\/\/localhost:1313\/posts\/blogs\/%E4%BC%98%E9%9B%85%E5%9C%B0%E8%87%AA%E5%AE%9A%E4%B9%89-hugo-blowfish-%E4%B8%BB%E9%A2%98%E6%88%96%E4%BB%BB%E4%BD%95-git-%E5%AD%90%E6%A8%A1%E5%9D%97\/",
     "author" : {
       "@type": "Person",
       "name": "Sunong2008"
     },
     "copyrightYear": "2025",
-    "dateCreated": "2025-08-07T00:00:00\u002b00:00",
-    "datePublished": "2025-08-07T00:00:00\u002b00:00",
+    "dateCreated": "2025-10-16T00:00:00\u002b00:00",
+    "datePublished": "2025-10-16T00:00:00\u002b00:00",
     
-    "dateModified": "2025-08-07T00:00:00\u002b00:00",
+    "dateModified": "2025-10-16T00:00:00\u002b00:00",
     
-    "keywords": ["linux"],
+    "keywords": ["blog"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "272"
+    "wordCount": "330"
   }]
   </script>
 
@@ -834,8 +838,8 @@ code, kbd, samp, pre {
 
   
   <li class="hidden">
-    <a class="hover:underline decoration-neutral-300 dark:underline-neutral-600" href="/posts/linux/btrfs%E4%B8%8B%E4%B8%8D%E6%98%BE%E7%A4%BAtimeshift%E5%88%9B%E5%BB%BA%E7%9A%84%E5%BF%AB%E7%85%A7%E5%88%9B%E5%BB%BA%E5%BF%AB%E7%85%A7%E5%A4%B1%E8%B4%A5/"
-      >btrfs下不显示timeshift创建的快照／创建快照失败</a
+    <a class="hover:underline decoration-neutral-300 dark:underline-neutral-600" href="/posts/blogs/%E4%BC%98%E9%9B%85%E5%9C%B0%E8%87%AA%E5%AE%9A%E4%B9%89-hugo-blowfish-%E4%B8%BB%E9%A2%98%E6%88%96%E4%BB%BB%E4%BD%95-git-%E5%AD%90%E6%A8%A1%E5%9D%97/"
+      >优雅地自定义 Hugo Blowfish 主题（或任何 Git 子模块）</a
     ><span class="px-1 text-primary-500">/</span>
   </li>
 
@@ -844,7 +848,7 @@ code, kbd, samp, pre {
 
       
       <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
-        btrfs下不显示timeshift创建的快照／创建快照失败
+        优雅地自定义 Hugo Blowfish 主题（或任何 Git 子模块）
       </h1>
       <div class="mt-1 mb-6 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
         
@@ -897,7 +901,7 @@ code, kbd, samp, pre {
   <div class="flex flex-row flex-wrap items-center">
     
     
-      <time datetime="2025-08-07T00:00:00&#43;00:00">2025-8-7</time><span class="px-2 text-primary-500">&middot;</span><span>272 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">2 分钟</span>
+      <time datetime="2025-10-16T00:00:00&#43;00:00">2025-10-16</time><span class="px-2 text-primary-500">&middot;</span><span>330 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">2 分钟</span>
     
 
     
@@ -1029,14 +1033,32 @@ code, kbd, samp, pre {
   <ul>
     <li>
       <ul>
-        <li><a href="#1-原因">1. 原因</a></li>
-        <li><a href="#2-解决方案">2. 解决方案</a>
+        <li><a href="#前言">前言</a></li>
+        <li><a href="#问题场景">问题场景</a></li>
+        <li><a href="#解决方案fork-并建立自定义子模块">解决方案：Fork 并建立自定义子模块</a>
           <ul>
-            <li><a href="#21-创建交换空间设置子卷">2.1 创建交换空间（设置子卷）</a></li>
-            <li><a href="#22-验证交换空间是否启用">2.2 验证交换空间是否启用</a></li>
-            <li><a href="#23-设置开机自动挂载-swapfile">2.3 设置开机自动挂载 swapfile</a></li>
+            <li><a href="#第一步检查当前子模块状态">第一步：检查当前子模块状态</a></li>
+            <li><a href="#第二步fork-官方主题仓库">第二步：Fork 官方主题仓库</a></li>
+            <li><a href="#第三步配置子模块使用你的-fork">第三步：配置子模块使用你的 Fork</a></li>
+            <li><a href="#第四步让主仓库指向你的-fork">第四步：让主仓库指向你的 Fork</a></li>
+            <li><a href="#第五步提交并推送修改">第五步：提交并推送修改</a></li>
           </ul>
         </li>
+        <li><a href="#主题更新策略">主题更新策略</a>
+          <ul>
+            <li><a href="#推荐方法合并上游更新">推荐方法：合并上游更新</a></li>
+            <li><a href="#其他方法使用变基保持线性历史">其他方法：使用变基保持线性历史</a></li>
+          </ul>
+        </li>
+        <li><a href="#fq">F&amp;Q</a>
+          <ul>
+            <li><a href="#如何查看上游更新">如何查看上游更新？</a></li>
+            <li><a href="#如何测试更新是否正常">如何测试更新是否正常？</a></li>
+            <li><a href="#如何回退到官方版本">如何回退到官方版本？</a></li>
+          </ul>
+        </li>
+        <li><a href="#最佳实践建议">最佳实践建议</a></li>
+        <li><a href="#总结">总结</a></li>
       </ul>
     </li>
   </ul>
@@ -1054,14 +1076,32 @@ code, kbd, samp, pre {
   <ul>
     <li>
       <ul>
-        <li><a href="#1-原因">1. 原因</a></li>
-        <li><a href="#2-解决方案">2. 解决方案</a>
+        <li><a href="#前言">前言</a></li>
+        <li><a href="#问题场景">问题场景</a></li>
+        <li><a href="#解决方案fork-并建立自定义子模块">解决方案：Fork 并建立自定义子模块</a>
           <ul>
-            <li><a href="#21-创建交换空间设置子卷">2.1 创建交换空间（设置子卷）</a></li>
-            <li><a href="#22-验证交换空间是否启用">2.2 验证交换空间是否启用</a></li>
-            <li><a href="#23-设置开机自动挂载-swapfile">2.3 设置开机自动挂载 swapfile</a></li>
+            <li><a href="#第一步检查当前子模块状态">第一步：检查当前子模块状态</a></li>
+            <li><a href="#第二步fork-官方主题仓库">第二步：Fork 官方主题仓库</a></li>
+            <li><a href="#第三步配置子模块使用你的-fork">第三步：配置子模块使用你的 Fork</a></li>
+            <li><a href="#第四步让主仓库指向你的-fork">第四步：让主仓库指向你的 Fork</a></li>
+            <li><a href="#第五步提交并推送修改">第五步：提交并推送修改</a></li>
           </ul>
         </li>
+        <li><a href="#主题更新策略">主题更新策略</a>
+          <ul>
+            <li><a href="#推荐方法合并上游更新">推荐方法：合并上游更新</a></li>
+            <li><a href="#其他方法使用变基保持线性历史">其他方法：使用变基保持线性历史</a></li>
+          </ul>
+        </li>
+        <li><a href="#fq">F&amp;Q</a>
+          <ul>
+            <li><a href="#如何查看上游更新">如何查看上游更新？</a></li>
+            <li><a href="#如何测试更新是否正常">如何测试更新是否正常？</a></li>
+            <li><a href="#如何回退到官方版本">如何回退到官方版本？</a></li>
+          </ul>
+        </li>
+        <li><a href="#最佳实践建议">最佳实践建议</a></li>
+        <li><a href="#总结">总结</a></li>
       </ul>
     </li>
   </ul>
@@ -1082,136 +1122,408 @@ code, kbd, samp, pre {
 
         <div class="article-content max-w-prose mb-20">
           
-<h2 class="relative group">1. 原因
-    <div id="1-原因" class="anchor"></div>
+  
+
+
+
+<div
+  
+    class="flex px-4 py-3 rounded-md bg-primary-100 dark:bg-primary-900"
+  
+  >
+  <span
+    
+      class="text-primary-400 pe-3 flex items-center"
+    
+    >
+    <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0zM256 128c17.67 0 32 14.33 32 32c0 17.67-14.33 32-32 32S224 177.7 224 160C224 142.3 238.3 128 256 128zM296 384h-80C202.8 384 192 373.3 192 360s10.75-24 24-24h16v-64H224c-13.25 0-24-10.75-24-24S210.8 224 224 224h32c13.25 0 24 10.75 24 24v88h16c13.25 0 24 10.75 24 24S309.3 384 296 384z"/></svg>
+</span>
+  </span>
+
+  <span
+    
+      class="dark:text-neutral-300"
+    
+    >少数内容由AI生成</span>
+</div>
+
+
+<h2 class="relative group">前言
+    <div id="前言" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
-        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#1-%e5%8e%9f%e5%9b%a0" aria-label="锚点">#</a>
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#%e5%89%8d%e8%a8%80" aria-label="锚点">#</a>
     </span>
     
 </h2>
-<p><a
-  href="https://bbs.deepin.org/zh/post/270814"
-    target="_blank"
-  >英雄在这里</a></p>
+<p>使用 Hugo 的 Blowfish 主题时，我们经常需要调整一些样式、字体或配置文件，以满足个性化需求。<br>
+然而，当主题是以 <strong>Git 子模块（submodule）</strong> 的形式存在时，直接修改主题文件会带来一个常见问题：<br>
+<strong>这些改动无法正常推送到远程仓库</strong>，从而导致更新或协作困难。</p>
+<p>本文将介绍一种通用、优雅的解决方案：<br>
+在保留自定义修改的同时，仍能轻松同步上游更新。</p>
 <blockquote>
-<p><strong>btrfs 文件系统玩 swapfile，如果还想用 timeshift 或者 snapper 备份快照，就必须把 swap 文件放到不需要备份的子卷里面（比如创建 @swap 子卷）。
-不然的话，如果直接放在需要快照的子卷，会在创建快照的时候会失败（提示设备正在被写入啥的/ 在 timeshift GUI 上不显示创建的快照）
-要是像我一样，哪天需要恢复快照了，突然发现一个快照都没建出来就搞笑了&hellip;&hellip;</strong></p></blockquote>
-<p><strong>所以需要把 swapfile 放到@swap 子卷里面</strong></p>
+<p>本文方法不仅适用于 Blowfish，也适用于任何以 Git 子模块引入的第三方项目。</p></blockquote>
+<hr>
 
-<h2 class="relative group">2. 解决方案
-    <div id="2-解决方案" class="anchor"></div>
+<h2 class="relative group">问题场景
+    <div id="问题场景" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
-        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#2-%e8%a7%a3%e5%86%b3%e6%96%b9%e6%a1%88" aria-label="锚点">#</a>
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#%e9%97%ae%e9%a2%98%e5%9c%ba%e6%99%af" aria-label="锚点">#</a>
     </span>
     
 </h2>
-<p><strong>⚠️注意：</strong></p>
-<p>在 btrfs 下，创建<strong>swap 文件</strong>而不是 swap 分区时：<br>
-<strong>把 swap 文件放到</strong>​ <strong>​ <code>/swap</code> ​</strong>​<strong>子卷中：</strong>  因为 timeshift 不会备份 <code>/swap</code> 子卷，导致恢复快照时，swap 文件 <code>/swap/swapfile</code> 会消失<br>
-<strong>不把 swap 文件放到子卷中：</strong>  timeshift 备份时，swapfile 被内核使用，会导致 <code>E: ERROR: Could not create subvolume: Text file busy</code>，导致无法创建快照 (<a
-  href="https://forum.archlinuxcn.org/t/topic/14276"
-    target="_blank"
-  >参考来源</a>)</p>
-<p>最佳实践可能是<strong>创建 swap 分区</strong>而不是<strong>swap 文件</strong></p>
-<p>或者仍然<strong>把 swap 文件放到</strong>​ <strong>​ <code>/swap</code> ​</strong>​<strong>子卷中</strong>，timeshift 恢复快照后，手动把 /swap 目录删掉、把原来的 /swap 子卷移动过来</p>
-<p>以下是<strong>创建 swap 文件+把 swap 文件放到</strong>​ <strong>​ <code>/swap</code> ​</strong>​<strong>子卷中</strong>的方案（<strong>创建 swap 分区</strong>的方法网上一搜一大把，就不写了）：</p>
+<p>假设你修改了 Blowfish 主题（如调整字体），随后在推送主仓库时遇到错误：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">下列子模组路径所包含的修改在任何远程源中都找不到：
+</span></span><span class="line"><span class="cl">  themes/blowfish
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">请尝试
+</span></span><span class="line"><span class="cl">	git push --recurse-submodules<span class="o">=</span>on-demand
+</span></span><span class="line"><span class="cl">	
+</span></span><span class="line"><span class="cl">或者进入到子目录执行
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">	git push
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">以推送至远程。
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">致命错误：正在终止。
+</span></span></code></pre></div><p>原因很简单：<br>
+<strong>子模块中的修改仅存在于本地</strong>，Git 无法在远程找到对应的提交。</p>
+<p>这通常发生在以下情况：</p>
+<ul>
+<li>
+<p>你在子模块中直接修改了文件；</p>
+</li>
+<li>
+<p>子模块处于 <code>detached HEAD</code> 状态；</p>
+</li>
+<li>
+<p>没有将修改推送到任何可访问的远程仓库。</p>
+</li>
+</ul>
+<hr>
 
-<h3 class="relative group">2.1 创建交换空间（设置子卷）
-    <div id="21-创建交换空间设置子卷" class="anchor"></div>
+<h2 class="relative group">解决方案：Fork 并建立自定义子模块
+    <div id="解决方案fork-并建立自定义子模块" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
-        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#21-%e5%88%9b%e5%bb%ba%e4%ba%a4%e6%8d%a2%e7%a9%ba%e9%97%b4%e8%ae%be%e7%bd%ae%e5%ad%90%e5%8d%b7" aria-label="锚点">#</a>
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#%e8%a7%a3%e5%86%b3%e6%96%b9%e6%a1%88fork-%e5%b9%b6%e5%bb%ba%e7%ab%8b%e8%87%aa%e5%ae%9a%e4%b9%89%e5%ad%90%e6%a8%a1%e5%9d%97" aria-label="锚点">#</a>
+    </span>
+    
+</h2>
+<p>核心思路是：</p>
+<blockquote>
+<p>为主题（或子模块）创建一个属于你自己的 Fork，<br>
+在其中保存自定义修改，<br>
+同时保持从官方仓库获取更新的能力。</p></blockquote>
+
+  
+
+
+
+<div
+  
+    class="flex px-4 py-3 rounded-md bg-primary-100 dark:bg-primary-900"
+  
+  >
+  <span
+    
+      class="text-primary-400 pe-3 flex items-center"
+    
+    >
+    <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0zM256 128c17.67 0 32 14.33 32 32c0 17.67-14.33 32-32 32S224 177.7 224 160C224 142.3 238.3 128 256 128zM296 384h-80C202.8 384 192 373.3 192 360s10.75-24 24-24h16v-64H224c-13.25 0-24-10.75-24-24S210.8 224 224 224h32c13.25 0 24 10.75 24 24v88h16c13.25 0 24 10.75 24 24S309.3 384 296 384z"/></svg>
+</span>
+  </span>
+
+  <span
+    
+      class="dark:text-neutral-300"
+    
+    ><p>还有个方法：删除子模块，把字体修改直接保存到主仓库中</p>
+<p>不在本文中介绍，请移步至《Blowfish 文档外自定义指南》-字体修改 的偏后部分</p>
+</span>
+</div>
+
+<hr>
+
+<h3 class="relative group">第一步：检查当前子模块状态
+    <div id="第一步检查当前子模块状态" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#%e7%ac%ac%e4%b8%80%e6%ad%a5%e6%a3%80%e6%9f%a5%e5%bd%93%e5%89%8d%e5%ad%90%e6%a8%a1%e5%9d%97%e7%8a%b6%e6%80%81" aria-label="锚点">#</a>
     </span>
     
 </h3>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># 创建交换子卷，位置是/swap（其他位置也可以，但是下面的都得换掉）</span>
-</span></span><span class="line"><span class="cl">sudo btrfs subvolume create /swap
+<p>进入主题目录，确认修改情况：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">cd</span> themes/blowfish
+</span></span><span class="line"><span class="cl">git status
+</span></span><span class="line"><span class="cl">git log --oneline -5
+</span></span></code></pre></div><p>若出现类似输出：</p>
+<pre tabindex="0"><code>头指针分离自 3e652b37
+无文件要提交，干净的工作区
+
+770a2a67 (HEAD) 自定义字体
+d0db9190 (origin/main, origin/HEAD) fix user.json
+</code></pre><p><code>分离自</code>说明当前处于 <strong>detached HEAD</strong> 状态（即未在任何分支上）。<br>
+我们需要将这个提交移动到自己的分支中。</p>
+<hr>
+
+<h3 class="relative group">第二步：Fork 官方主题仓库
+    <div id="第二步fork-官方主题仓库" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#%e7%ac%ac%e4%ba%8c%e6%ad%a5fork-%e5%ae%98%e6%96%b9%e4%b8%bb%e9%a2%98%e4%bb%93%e5%ba%93" aria-label="锚点">#</a>
+    </span>
+    
+</h3>
+<ol>
+<li>
+<p>打开 Blowfish 官方仓库<br>
+<a
+  href="https://github.com/nunocoracao/blowfish"
+    target="_blank"
+  >https://github.com/nunocoracao/blowfish</a></p>
+</li>
+<li>
+<p>点击右上角 <strong>Fork</strong> 按钮</p>
+</li>
+<li>
+<p>将仓库 Fork 到自己的 GitHub 账号</p>
+</li>
+</ol>
+<hr>
+
+<h3 class="relative group">第三步：配置子模块使用你的 Fork
+    <div id="第三步配置子模块使用你的-fork" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#%e7%ac%ac%e4%b8%89%e6%ad%a5%e9%85%8d%e7%bd%ae%e5%ad%90%e6%a8%a1%e5%9d%97%e4%bd%bf%e7%94%a8%e4%bd%a0%e7%9a%84-fork" aria-label="锚点">#</a>
+    </span>
+    
+</h3>
+<p>在子模块目录中执行以下命令（这里以<code>custom-font</code>为分支名称）：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># 确认当前远程</span>
+</span></span><span class="line"><span class="cl">git remote -v
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># 进入交换子卷目录</span>
-</span></span><span class="line"><span class="cl"><span class="nb">cd</span> /swap
+</span></span><span class="line"><span class="cl"><span class="c1"># 添加你的 Fork</span>
+</span></span><span class="line"><span class="cl">git remote add myfork https://github.com/你的用户名/blowfish.git
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># 创建一个0大小的文件</span>
-</span></span><span class="line"><span class="cl">sudo truncate -s <span class="m">0</span> /swap/swapfile
+</span></span><span class="line"><span class="cl"><span class="c1"># 创建分支保存自定义修改</span>
+</span></span><span class="line"><span class="cl">git checkout -b custom-font 770a2a67
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># 设置No_COW属性</span>
-</span></span><span class="line"><span class="cl">sudo chattr +C swapfile
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># 禁用压缩</span>
-</span></span><span class="line"><span class="cl">sudo btrfs property <span class="nb">set</span> swapfile compression none
-</span></span><span class="line"><span class="cl">ERROR: failed to <span class="nb">set</span> compression <span class="k">for</span> swapfile: Invalid argument <span class="c1">#不知道为什么，不过不影响</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># 将文件填充、扩容</span>
-</span></span><span class="line"><span class="cl">sudo dd <span class="k">if</span><span class="o">=</span>/dev/zero <span class="nv">of</span><span class="o">=</span>/swap/swapfile <span class="nv">bs</span><span class="o">=</span>1G <span class="nv">count</span><span class="o">=</span><span class="m">6</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># 设置swapfile权限</span>
-</span></span><span class="line"><span class="cl">sudo chmod <span class="m">600</span> swapfile
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># 格式化swapfile</span>
-</span></span><span class="line"><span class="cl">sudo mkswap swapfile
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># 启用swapfile</span>
-</span></span><span class="line"><span class="cl">sudo swapon swapfile
+</span></span><span class="line"><span class="cl"><span class="c1"># 推送到你的 Fork</span>
+</span></span><span class="line"><span class="cl">git push myfork custom-font
+</span></span></code></pre></div><hr>
+
+<h3 class="relative group">第四步：让主仓库指向你的 Fork
+    <div id="第四步让主仓库指向你的-fork" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#%e7%ac%ac%e5%9b%9b%e6%ad%a5%e8%ae%a9%e4%b8%bb%e4%bb%93%e5%ba%93%e6%8c%87%e5%90%91%e4%bd%a0%e7%9a%84-fork" aria-label="锚点">#</a>
+    </span>
+    
+</h3>
+<p>回到 Hugo 博客根目录：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">cd</span> ../..
+</span></span></code></pre></div><p>编辑 <code>.gitmodules</code> 文件，将内容改为：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-ini" data-lang="ini"><span class="line"><span class="cl"><span class="k">[submodule &#34;themes/blowfish&#34;]</span>
+</span></span><span class="line"><span class="cl">	<span class="na">path</span> <span class="o">=</span> <span class="s">themes/blowfish
+</span></span></span><span class="line"><span class="cl"><span class="s">	url = https://github.com/你的用户名/blowfish.git</span>
+</span></span></code></pre></div><p>同步配置：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git submodule sync
+</span></span><span class="line"><span class="cl"><span class="nb">cd</span> themes/blowfish
+</span></span><span class="line"><span class="cl">git remote set-url origin https://github.com/你的用户名/blowfish.git
+</span></span></code></pre></div><hr>
+
+<h3 class="relative group">第五步：提交并推送修改
+    <div id="第五步提交并推送修改" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#%e7%ac%ac%e4%ba%94%e6%ad%a5%e6%8f%90%e4%ba%a4%e5%b9%b6%e6%8e%a8%e9%80%81%e4%bf%ae%e6%94%b9" aria-label="锚点">#</a>
+    </span>
+    
+</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">cd</span> ../..
+</span></span><span class="line"><span class="cl">git add .gitmodules themes/blowfish
+</span></span><span class="line"><span class="cl">git commit -m <span class="s2">&#34;Switch Blowfish submodule to personal fork&#34;</span>
+</span></span><span class="line"><span class="cl">git push
+</span></span></code></pre></div><p>如果子模块的修改尚未推送，补上：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">cd</span> themes/blowfish
+</span></span><span class="line"><span class="cl">git push --set-upstream origin custom-font
+</span></span><span class="line"><span class="cl"><span class="nb">cd</span> ../..
+</span></span><span class="line"><span class="cl">git add themes/blowfish
+</span></span><span class="line"><span class="cl">git commit -m <span class="s2">&#34;Update submodule reference&#34;</span>
+</span></span><span class="line"><span class="cl">git push
+</span></span></code></pre></div><hr>
+
+<h2 class="relative group">主题更新策略
+    <div id="主题更新策略" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#%e4%b8%bb%e9%a2%98%e6%9b%b4%e6%96%b0%e7%ad%96%e7%95%a5" aria-label="锚点">#</a>
+    </span>
+    
+</h2>
+<p>有了自己的 Fork 后，你可以随时同步官方更新，而不丢失自定义内容。</p>
+
+<h3 class="relative group">推荐方法：合并上游更新
+    <div id="推荐方法合并上游更新" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#%e6%8e%a8%e8%8d%90%e6%96%b9%e6%b3%95%e5%90%88%e5%b9%b6%e4%b8%8a%e6%b8%b8%e6%9b%b4%e6%96%b0" aria-label="锚点">#</a>
+    </span>
+    
+</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">cd</span> themes/blowfish
+</span></span><span class="line"><span class="cl">git remote add upstream https://github.com/nunocoracao/blowfish.git
+</span></span><span class="line"><span class="cl">git fetch upstream
+</span></span><span class="line"><span class="cl">git merge upstream/main
+</span></span><span class="line"><span class="cl">git push origin custom-font
+</span></span></code></pre></div><p>这种方式最安全，能保留你的修改记录。</p>
+
+<h3 class="relative group">其他方法：使用变基保持线性历史
+    <div id="其他方法使用变基保持线性历史" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#%e5%85%b6%e4%bb%96%e6%96%b9%e6%b3%95%e4%bd%bf%e7%94%a8%e5%8f%98%e5%9f%ba%e4%bf%9d%e6%8c%81%e7%ba%bf%e6%80%a7%e5%8e%86%e5%8f%b2" aria-label="锚点">#</a>
+    </span>
+    
+</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">cd</span> themes/blowfish
+</span></span><span class="line"><span class="cl">git fetch upstream
+</span></span><span class="line"><span class="cl">git rebase upstream/main
+</span></span><span class="line"><span class="cl">git push --force origin custom-font
+</span></span></code></pre></div><p>适合对 Git 操作较熟悉的用户，能保持干净的历史，但注意变基会改写提交记录。</p>
+
+<h2 class="relative group">F&amp;Q
+    <div id="fq" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#fq" aria-label="锚点">#</a>
+    </span>
+    
+</h2>
+
+<h3 class="relative group">如何查看上游更新？
+    <div id="如何查看上游更新" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#%e5%a6%82%e4%bd%95%e6%9f%a5%e7%9c%8b%e4%b8%8a%e6%b8%b8%e6%9b%b4%e6%96%b0" aria-label="锚点">#</a>
+    </span>
+    
+</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">cd</span> themes/blowfish
+</span></span><span class="line"><span class="cl">git fetch upstream
+</span></span><span class="line"><span class="cl">git log HEAD..upstream/main --oneline
 </span></span></code></pre></div>
-<h3 class="relative group">2.2 验证交换空间是否启用
-    <div id="22-验证交换空间是否启用" class="anchor"></div>
+<h3 class="relative group">如何测试更新是否正常？
+    <div id="如何测试更新是否正常" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
-        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#22-%e9%aa%8c%e8%af%81%e4%ba%a4%e6%8d%a2%e7%a9%ba%e9%97%b4%e6%98%af%e5%90%a6%e5%90%af%e7%94%a8" aria-label="锚点">#</a>
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#%e5%a6%82%e4%bd%95%e6%b5%8b%e8%af%95%e6%9b%b4%e6%96%b0%e6%98%af%e5%90%a6%e6%ad%a3%e5%b8%b8" aria-label="锚点">#</a>
     </span>
     
 </h3>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># 查看交换文件是否已激活</span>
-</span></span><span class="line"><span class="cl">sudo swapon --show
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># 查看系统内存和交换使用情况</span>
-</span></span><span class="line"><span class="cl">free -h
-</span></span></code></pre></div><p>你应该能看到类似这样的输出：</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ sudo swapon --show
-</span></span><span class="line"><span class="cl">NAME           TYPE SIZE USED PRIO
-</span></span><span class="line"><span class="cl">/swap/swapfile file   6G   0B   -2
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">$ free -h
-</span></span><span class="line"><span class="cl">                总计        已用        空闲        共享   缓冲/缓存        可用
-</span></span><span class="line"><span class="cl">内存：          15Gi       6.3Gi       621Mi       1.3Gi       9.5Gi       9.0Gi
-</span></span><span class="line"><span class="cl">交换：         6.0Gi          0B       6.0Gi   
-</span></span></code></pre></div>
-<h3 class="relative group">2.3 设置开机自动挂载 swapfile
-    <div id="23-设置开机自动挂载-swapfile" class="anchor"></div>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">hugo server -D
+</span></span></code></pre></div><p>确认主题在本地运行正常后再推送。</p>
+
+<h3 class="relative group">如何回退到官方版本？
+    <div id="如何回退到官方版本" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
-        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#23-%e8%ae%be%e7%bd%ae%e5%bc%80%e6%9c%ba%e8%87%aa%e5%8a%a8%e6%8c%82%e8%bd%bd-swapfile" aria-label="锚点">#</a>
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#%e5%a6%82%e4%bd%95%e5%9b%9e%e9%80%80%e5%88%b0%e5%ae%98%e6%96%b9%e7%89%88%e6%9c%ac" aria-label="锚点">#</a>
     </span>
     
 </h3>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># 编辑 fstab 文件</span>
-</span></span><span class="line"><span class="cl">sudo nano /etc/fstab
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># 在文件末尾添加这一行：</span>
-</span></span><span class="line"><span class="cl">/swap/swapfile none swap sw <span class="m">0</span> <span class="m">0</span>
-</span></span></code></pre></div><p><strong>重启后验证</strong>交换文件是否自动启用：</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># 查看交换文件是否已激活</span>
-</span></span><span class="line"><span class="cl">sudo swapon --show
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># 查看系统内存和交换使用情况</span>
-</span></span><span class="line"><span class="cl">free -h
-</span></span></code></pre></div><p>你应该能看到类似这样的输出：</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ sudo swapon --show
-</span></span><span class="line"><span class="cl">NAME           TYPE SIZE USED PRIO
-</span></span><span class="line"><span class="cl">/swap/swapfile file   6G   0B   -2
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">$ free -h
-</span></span><span class="line"><span class="cl">                总计        已用        空闲        共享   缓冲/缓存        可用
-</span></span><span class="line"><span class="cl">内存：          15Gi       6.3Gi       621Mi       1.3Gi       9.5Gi       9.0Gi
-</span></span><span class="line"><span class="cl">交换：         6.0Gi          0B       6.0Gi   
-</span></span></code></pre></div><p>‍</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">cd</span> themes/blowfish
+</span></span><span class="line"><span class="cl">git checkout main
+</span></span><span class="line"><span class="cl"><span class="nb">cd</span> ../..
+</span></span><span class="line"><span class="cl">git submodule sync
+</span></span><span class="line"><span class="cl">git add .gitmodules themes/blowfish
+</span></span><span class="line"><span class="cl">git commit -m <span class="s2">&#34;Revert to official blowfish theme&#34;</span>
+</span></span><span class="line"><span class="cl">git push
+</span></span></code></pre></div><hr>
+
+<h2 class="relative group">最佳实践建议
+    <div id="最佳实践建议" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#%e6%9c%80%e4%bd%b3%e5%ae%9e%e8%b7%b5%e5%bb%ba%e8%ae%ae" aria-label="锚点">#</a>
+    </span>
+    
+</h2>
+<ol>
+<li>
+<p><strong>定期同步上游</strong>：每月更新一次主题，防止版本落后。</p>
+</li>
+<li>
+<p><strong>尽量少改主题代码</strong>：优先通过配置或自定义 CSS 实现修改。</p>
+</li>
+<li>
+<p><strong>记录修改内容</strong>：在 Fork 的 README 中注明改动目的。</p>
+</li>
+<li>
+<p><strong>使用语义化分支名</strong>：如 <code>custom-font</code>、<code>custom-layout</code>，方便区分用途。</p>
+</li>
+<li>
+<p><strong>备份关键改动</strong>：重要样式或配置可单独备份，防止冲突丢失。</p>
+</li>
+</ol>
+<hr>
+
+<h2 class="relative group">总结
+    <div id="总结" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#%e6%80%bb%e7%bb%93" aria-label="锚点">#</a>
+    </span>
+    
+</h2>
+<p>通过 Fork 子模块的方式，我们可以：</p>
+<ul>
+<li>
+<p><strong>保留自定义修改</strong></p>
+</li>
+<li>
+<p><strong>保持上游更新能力</strong></p>
+</li>
+<li>
+<p><strong>避免 Git 推送冲突</strong></p>
+</li>
+</ul>
+<p>这种做法不仅适用于 Hugo Blowfish 主题，也同样适用于任何以 Git 子模块引入的第三方项目。</p>
+<p><strong>核心步骤回顾：</strong></p>
+<ol>
+<li>
+<p>Fork 原仓库</p>
+</li>
+<li>
+<p>新建分支保存自定义修改</p>
+</li>
+<li>
+<p>修改 <code>.gitmodules</code> 指向你的 Fork</p>
+</li>
+<li>
+<p>定期同步 upstream 保持更新</p>
+</li>
+</ol>
 
           
           
@@ -1239,8 +1551,8 @@ code, kbd, samp, pre {
           type="text/javascript"
           src="/js/page.min.54b6f4371722649edbe871e431d8670d670878c22be8f36e229fe53cc9b786fe25a834def5e6de621f7a3e37b72bc8cd73839aa5ed907ed6cbd45cd3e1b0fa20.js"
           integrity="sha512-VLb0NxciZJ7b6HHkMdhnDWcIeMIr6PNuIp/lPMm3hv4lqDTe9ebeYh96Pje3K8jNc4Oape2QftbL1FzT4bD6IA=="
-          data-oid="views_posts/linux/btrfs下不显示timeshift创建的快照／创建快照失败.md"
-          data-oid-likes="likes_posts/linux/btrfs下不显示timeshift创建的快照／创建快照失败.md"></script>
+          data-oid="views_posts/blogs/优雅地自定义 Hugo Blowfish 主题（或任何 Git 子模块）.md"
+          data-oid-likes="likes_posts/blogs/优雅地自定义 Hugo Blowfish 主题（或任何 Git 子模块）.md"></script>
       
     </section>
 
@@ -1258,32 +1570,19 @@ code, kbd, samp, pre {
           
             <a
               class="flex text-neutral-700 hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400"
-              href="/posts/linux/timeshift%E6%97%A0%E6%B3%95%E5%88%A0%E9%99%A4%E5%BF%AB%E7%85%A7/">
+              href="/posts/%E6%97%A5%E5%B8%B8/%E7%90%86%E6%B0%B4%E8%8A%82%E9%80%89/">
               <span class="leading-6">
-                <span class="inline-block rtl:rotate-180">&larr;</span>&ensp;timeshift无法删除快照
+                <span class="inline-block rtl:rotate-180">&larr;</span>&ensp;理水(节选)
               </span>
             </a>
             
               <span class="ms-6 mt-1 text-xs text-neutral-500 dark:text-neutral-400">
-                <time datetime="2025-08-07T00:00:00&#43;00:00">2025-8-7</time>
+                <time datetime="2025-10-14T00:00:00&#43;00:00">2025-10-14</time>
               </span>
             
           
         </span>
         <span class="flex flex-col items-end">
-          
-            <a
-              class="flex text-right text-neutral-700 hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400"
-              href="/posts/linux/%E5%85%B3%E4%BA%8Etimeshift%E5%92%8Cswap%E7%9A%84%E6%81%A9%E6%80%A8%E9%97%AE%E9%A2%98/">
-              <span class="leading-6">
-                关于timeshift和swap的恩怨问题&ensp;<span class="inline-block rtl:rotate-180">&rarr;</span>
-              </span>
-            </a>
-            
-              <span class="me-6 mt-1 text-xs text-neutral-500 dark:text-neutral-400">
-                <time datetime="2025-08-09T00:00:00&#43;00:00">2025-8-9</time>
-              </span>
-            
           
         </span>
       </div>

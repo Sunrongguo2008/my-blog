@@ -228,7 +228,7 @@
     "keywords": ["测试"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "380"
+    "wordCount": "475"
   }]
   </script>
 
@@ -898,7 +898,7 @@ code, kbd, samp, pre {
   <div class="flex flex-row flex-wrap items-center">
     
     
-      <time datetime="2025-10-02T06:20:10&#43;08:00">2025-10-2</time><span class="px-2 text-primary-500">&middot;</span><span>380 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">2 分钟</span>
+      <time datetime="2025-10-02T06:20:10&#43;08:00">2025-10-2</time><span class="px-2 text-primary-500">&middot;</span><span>475 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">3 分钟</span>
     
 
     
@@ -1031,8 +1031,12 @@ code, kbd, samp, pre {
     <li>
       <ul>
         <li><a href="#用blowfish创建了博客泰裤辣">用Blowfish创建了博客！泰裤辣！😄</a></li>
-        <li><a href="#字体修改">字体修改</a></li>
-        <li><a href="#修改侧栏toc和标题颜色">修改侧栏(TOC)和标题颜色</a></li>
+        <li><a href="#博客修改">博客修改</a>
+          <ul>
+            <li><a href="#修改侧栏toc和标题颜色">修改侧栏(TOC)和标题颜色</a></li>
+            <li><a href="#字体修改">字体修改</a></li>
+          </ul>
+        </li>
       </ul>
     </li>
   </ul>
@@ -1051,8 +1055,12 @@ code, kbd, samp, pre {
     <li>
       <ul>
         <li><a href="#用blowfish创建了博客泰裤辣">用Blowfish创建了博客！泰裤辣！😄</a></li>
-        <li><a href="#字体修改">字体修改</a></li>
-        <li><a href="#修改侧栏toc和标题颜色">修改侧栏(TOC)和标题颜色</a></li>
+        <li><a href="#博客修改">博客修改</a>
+          <ul>
+            <li><a href="#修改侧栏toc和标题颜色">修改侧栏(TOC)和标题颜色</a></li>
+            <li><a href="#字体修改">字体修改</a></li>
+          </ul>
+        </li>
       </ul>
     </li>
   </ul>
@@ -1086,18 +1094,16 @@ code, kbd, samp, pre {
     
 </h2>
 
-<h2 class="relative group">字体修改
-    <div id="字体修改" class="anchor"></div>
+<h2 class="relative group">博客修改
+    <div id="博客修改" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
-        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#%e5%ad%97%e4%bd%93%e4%bf%ae%e6%94%b9" aria-label="锚点">#</a>
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#%e5%8d%9a%e5%ae%a2%e4%bf%ae%e6%94%b9" aria-label="锚点">#</a>
     </span>
     
 </h2>
-<p>从网站找到代码，比如：https://fonts.zeoseven.com/items/442/#embed</p>
-<p>选中 <code>HTML强化</code>，用里面的代码进行导入</p>
-<p>
+
   
 
 
@@ -1120,67 +1126,13 @@ code, kbd, samp, pre {
     
       class="dark:text-neutral-300"
     
-    ><p>在我这里，<code>常规CSS</code>无法使用，所以用<code>HTML强化</code></p>
-<p><code>英文子集化</code>可以让所有英文显示为指定字体</p>
-<p><code>全部版本</code>可以展示所用可用的字型，可与选择适合的字型链接替代<code>HTML强化</code>中的链接</p>
+    ><p>所有例子中，<code>/</code>指主仓库根目录</p>
+<p>我的网站目录在<code>~/文/my-blog</code> ，因此<code>/themes/blowfish/</code>指的是<code>~/文/my-blog/themes/blowfish/</code></p>
 </span>
 </div>
 
-<figure><img
-    class="my-0 rounded-md"
-    loading="lazy"
-    decoding="async"
-    fetchpriority="low"
-    alt="image.png"
-    src="https://cdn.jsdelivr.net/gh/Sunrongguo2008/picture/obsidian/20251016125133509.png"
-    ></figure>
-</p>
-<p>新建 /themes/blowfish/layouts/partials/extend-head.html</p>
-<p>把内容放进去</p>
-<p>最后差不多这个样：</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-HTML" data-lang="HTML"><span class="line"><span class="cl"><span class="c">&lt;!--导入LXGW WenKai Mono字体--&gt;</span>
-</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&#34;preload&#34;</span> <span class="na">as</span><span class="o">=</span><span class="s">&#34;style&#34;</span> <span class="na">crossorigin</span>
-</span></span><span class="line"><span class="cl">    <span class="na">href</span><span class="o">=</span><span class="s">&#34;https://fontsapi.zeoseven.com/292/medium/result.css&#34;</span>
-</span></span><span class="line"><span class="cl">    <span class="na">onload</span><span class="o">=</span><span class="s">&#34;this.rel=&#39;stylesheet&#39;&#34;</span>
-</span></span><span class="line"><span class="cl">    <span class="na">onerror</span><span class="o">=</span><span class="s">&#34;this.href=&#39;https://fontsapi-storage.zeoseven.com/292/medium/result.css&#39;&#34;</span> <span class="p">/&gt;</span>
-</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">noscript</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&#34;stylesheet&#34;</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;https://fontsapi.zeoseven.com/292/medium/result.css&#34;</span> <span class="p">/&gt;</span>
-</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">noscript</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c">&lt;!--导入Maple Mono NF-CN字体--&gt;</span>
-</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&#34;preload&#34;</span> <span class="na">as</span><span class="o">=</span><span class="s">&#34;style&#34;</span> <span class="na">crossorigin</span>
-</span></span><span class="line"><span class="cl">    <span class="na">href</span><span class="o">=</span><span class="s">&#34;https://fontsapi.zeoseven.com/442/main/result.css&#34;</span>
-</span></span><span class="line"><span class="cl">    <span class="na">onload</span><span class="o">=</span><span class="s">&#34;this.rel=&#39;stylesheet&#39;&#34;</span>
-</span></span><span class="line"><span class="cl">    <span class="na">onerror</span><span class="o">=</span><span class="s">&#34;this.href=&#39;https://fontsapi-storage.zeoseven.com/442/main/result.css&#39;&#34;</span> <span class="p">/&gt;</span>
-</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">noscript</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&#34;stylesheet&#34;</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;https://fontsapi.zeoseven.com/442/main/result.css&#34;</span> <span class="p">/&gt;</span>
-</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">noscript</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl"><span class="c">/*
-</span></span></span><span class="line"><span class="cl"><span class="c">无需专门导入字体，让所有英文显示为Maple Mono NF-CN字体
-</span></span></span><span class="line"><span class="cl"><span class="c">@font-face {
-</span></span></span><span class="line"><span class="cl"><span class="c">    font-family: &#34;ZSFT-ENMin-442&#34;;
-</span></span></span><span class="line"><span class="cl"><span class="c">    src: url(&#34;https://fontsapi.zeoseven.com/442/main.woff2&#34;) format(&#39;woff2&#39;),
-</span></span></span><span class="line"><span class="cl"><span class="c">        url(&#34;https://fontsapi-storage.zeoseven.com/442/main.woff2&#34;) format(&#39;woff2&#39;);
-</span></span></span><span class="line"><span class="cl"><span class="c">    unicode-range: U+0061-007A, U+0041-005A, U+0030-0039, U+002E, U+002C, U+0021, U+003F, U+003A, U+003B, U+002D;
-</span></span></span><span class="line"><span class="cl"><span class="c">}
-</span></span></span><span class="line"><span class="cl"><span class="c">*/</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c">/* (需专门导入字体)让所有正文显示为LXGW字体 */</span>
-</span></span><span class="line"><span class="cl">    <span class="nt">body</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">        <span class="k">font-family</span><span class="p">:</span> <span class="s2">&#34;LXGW WenKai&#34;</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">        <span class="k">font-weight</span><span class="p">:</span> <span class="kc">normal</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="p">}</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c">/* (需专门导入字体)让所有代码块显示为Maple Mono NF-CN字体 */</span>
-</span></span><span class="line"><span class="cl"><span class="nt">code</span><span class="o">,</span> <span class="nt">kbd</span><span class="o">,</span> <span class="nt">samp</span><span class="o">,</span> <span class="nt">pre</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">    <span class="k">font-family</span><span class="p">:</span> <span class="s2">&#34;Maple Mono NF CN&#34;</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span>
-</span></span></code></pre></div>
-<h2 class="relative group">修改侧栏(TOC)和标题颜色
+
+<h3 class="relative group">修改侧栏(TOC)和标题颜色
     <div id="修改侧栏toc和标题颜色" class="anchor"></div>
     
     <span
@@ -1188,9 +1140,19 @@ code, kbd, samp, pre {
         <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#%e4%bf%ae%e6%94%b9%e4%be%a7%e6%a0%8ftoc%e5%92%8c%e6%a0%87%e9%a2%98%e9%a2%9c%e8%89%b2" aria-label="锚点">#</a>
     </span>
     
-</h2>
-<p>新建 /assets/css/custom.css
-写入以下代码：</p>
+</h3>
+<p>效果：
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt="image.png"
+    src="https://cdn.jsdelivr.net/gh/Sunrongguo2008/picture/obsidian/20251016224355331.png"
+    ></figure>
+
+新建 <code>/assets/css/custom.css</code></p>
+<p>写入以下代码：</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-CSS" data-lang="CSS"><span class="line"><span class="cl"><span class="c">/* 浅色模式下的彩虹色标题 */</span>  
 </span></span><span class="line"><span class="cl"><span class="p">:</span><span class="nd">where</span><span class="o">(</span><span class="nt">h2</span><span class="o">)</span><span class="p">:</span><span class="nd">not</span><span class="o">(</span><span class="p">:</span><span class="nd">where</span><span class="o">([</span><span class="nt">class</span><span class="o">~=</span><span class="s2">&#34;not-prose&#34;</span><span class="o">],[</span><span class="nt">class</span><span class="o">~=</span><span class="s2">&#34;not-prose&#34;</span><span class="o">]</span> <span class="o">*))</span> <span class="p">{</span>  
 </span></span><span class="line"><span class="cl">  <span class="k">color</span><span class="p">:</span> <span class="mh">#dc2626</span> <span class="cp">!important</span><span class="p">;</span> <span class="c">/* 红色 */</span>  
@@ -1248,6 +1210,139 @@ code, kbd, samp, pre {
 </span></span><span class="line"><span class="cl"><span class="p">.</span><span class="nc">dark</span> <span class="p">.</span><span class="nc">toc</span> <span class="nt">ul</span> <span class="nt">ul</span> <span class="nt">ul</span> <span class="nt">ul</span> <span class="nt">li</span> <span class="nt">a</span> <span class="p">{</span> <span class="k">color</span><span class="p">:</span> <span class="mh">#4ade80</span> <span class="cp">!important</span><span class="p">;</span> <span class="p">}</span> <span class="c">/* H4对应浅绿色 */</span>  
 </span></span><span class="line"><span class="cl"><span class="p">.</span><span class="nc">dark</span> <span class="p">.</span><span class="nc">toc</span> <span class="nt">ul</span> <span class="nt">ul</span> <span class="nt">ul</span> <span class="nt">ul</span> <span class="nt">ul</span> <span class="nt">li</span> <span class="nt">a</span> <span class="p">{</span> <span class="k">color</span><span class="p">:</span> <span class="mh">#60a5fa</span> <span class="cp">!important</span><span class="p">;</span> <span class="p">}</span> <span class="c">/* H5对应浅蓝色 */</span>  
 </span></span><span class="line"><span class="cl"><span class="p">.</span><span class="nc">dark</span> <span class="p">.</span><span class="nc">toc</span> <span class="nt">ul</span> <span class="nt">ul</span> <span class="nt">ul</span> <span class="nt">ul</span> <span class="nt">ul</span> <span class="nt">ul</span> <span class="nt">li</span> <span class="nt">a</span> <span class="p">{</span> <span class="k">color</span><span class="p">:</span> <span class="mh">#a78bfa</span> <span class="cp">!important</span><span class="p">;</span> <span class="p">}</span> <span class="c">/* H6对应浅紫色 */</span>
+</span></span></code></pre></div>
+<h3 class="relative group">字体修改
+    <div id="字体修改" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#%e5%ad%97%e4%bd%93%e4%bf%ae%e6%94%b9" aria-label="锚点">#</a>
+    </span>
+    
+</h3>
+<p>从网站找到代码，比如：https://fonts.zeoseven.com/items/442/#embed</p>
+<p>选中 <code>HTML强化</code>，用里面的代码进行导入</p>
+<p>
+  
+
+
+
+<div
+  
+    class="flex px-4 py-3 rounded-md bg-primary-100 dark:bg-primary-900"
+  
+  >
+  <span
+    
+      class="text-primary-400 pe-3 flex items-center"
+    
+    >
+    <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0zM256 128c17.67 0 32 14.33 32 32c0 17.67-14.33 32-32 32S224 177.7 224 160C224 142.3 238.3 128 256 128zM296 384h-80C202.8 384 192 373.3 192 360s10.75-24 24-24h16v-64H224c-13.25 0-24-10.75-24-24S210.8 224 224 224h32c13.25 0 24 10.75 24 24v88h16c13.25 0 24 10.75 24 24S309.3 384 296 384z"/></svg>
+</span>
+  </span>
+
+  <span
+    
+      class="dark:text-neutral-300"
+    
+    ><p>在我这里，<code>常规CSS</code>无法使用，所以用<code>HTML强化</code></p>
+<p><code>英文子集化</code>可以让所有英文显示为指定字体</p>
+<p><code>全部版本</code>可以展示所用可用的字型，可与选择适合的字型链接替代<code>HTML强化</code>中的链接</p>
+</span>
+</div>
+
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt="image.png"
+    src="https://cdn.jsdelivr.net/gh/Sunrongguo2008/picture/obsidian/20251016125133509.png"
+    ></figure>
+</p>
+<p>新建 <code>/themes/blowfish/layouts/partials/extend-head.html</code></p>
+<p>把内容放进去</p>
+<p>最后差不多这个样：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-HTML" data-lang="HTML"><span class="line"><span class="cl"><span class="c">&lt;!--导入LXGW WenKai Mono字体--&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&#34;preload&#34;</span> <span class="na">as</span><span class="o">=</span><span class="s">&#34;style&#34;</span> <span class="na">crossorigin</span>
+</span></span><span class="line"><span class="cl">    <span class="na">href</span><span class="o">=</span><span class="s">&#34;https://fontsapi.zeoseven.com/292/medium/result.css&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="na">onload</span><span class="o">=</span><span class="s">&#34;this.rel=&#39;stylesheet&#39;&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="na">onerror</span><span class="o">=</span><span class="s">&#34;this.href=&#39;https://fontsapi-storage.zeoseven.com/292/medium/result.css&#39;&#34;</span> <span class="p">/&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">noscript</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&#34;stylesheet&#34;</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;https://fontsapi.zeoseven.com/292/medium/result.css&#34;</span> <span class="p">/&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">noscript</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c">&lt;!--导入Maple Mono NF-CN字体--&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&#34;preload&#34;</span> <span class="na">as</span><span class="o">=</span><span class="s">&#34;style&#34;</span> <span class="na">crossorigin</span>
+</span></span><span class="line"><span class="cl">    <span class="na">href</span><span class="o">=</span><span class="s">&#34;https://fontsapi.zeoseven.com/442/main/result.css&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="na">onload</span><span class="o">=</span><span class="s">&#34;this.rel=&#39;stylesheet&#39;&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="na">onerror</span><span class="o">=</span><span class="s">&#34;this.href=&#39;https://fontsapi-storage.zeoseven.com/442/main/result.css&#39;&#34;</span> <span class="p">/&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">noscript</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&#34;stylesheet&#34;</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;https://fontsapi.zeoseven.com/442/main/result.css&#34;</span> <span class="p">/&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">noscript</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="c">/*
+</span></span></span><span class="line"><span class="cl"><span class="c">无需专门导入字体，让所有英文显示为Maple Mono NF-CN字体
+</span></span></span><span class="line"><span class="cl"><span class="c">@font-face {
+</span></span></span><span class="line"><span class="cl"><span class="c">    font-family: &#34;ZSFT-ENMin-442&#34;;
+</span></span></span><span class="line"><span class="cl"><span class="c">    src: url(&#34;https://fontsapi.zeoseven.com/442/main.woff2&#34;) format(&#39;woff2&#39;),
+</span></span></span><span class="line"><span class="cl"><span class="c">        url(&#34;https://fontsapi-storage.zeoseven.com/442/main.woff2&#34;) format(&#39;woff2&#39;);
+</span></span></span><span class="line"><span class="cl"><span class="c">    unicode-range: U+0061-007A, U+0041-005A, U+0030-0039, U+002E, U+002C, U+0021, U+003F, U+003A, U+003B, U+002D;
+</span></span></span><span class="line"><span class="cl"><span class="c">}
+</span></span></span><span class="line"><span class="cl"><span class="c">*/</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c">/* (需专门导入字体)让所有正文显示为LXGW字体 */</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">body</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">font-family</span><span class="p">:</span> <span class="s2">&#34;LXGW WenKai&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">font-weight</span><span class="p">:</span> <span class="kc">normal</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c">/* (需专门导入字体)让所有代码块显示为Maple Mono NF-CN字体 */</span>
+</span></span><span class="line"><span class="cl"><span class="nt">code</span><span class="o">,</span> <span class="nt">kbd</span><span class="o">,</span> <span class="nt">samp</span><span class="o">,</span> <span class="nt">pre</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">font-family</span><span class="p">:</span> <span class="s2">&#34;Maple Mono NF CN&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span>
+</span></span></code></pre></div><p>注意：如果你用git下载/管理的blowfish主题，修改<code>/themes/blowfish</code>（添加了<code>/themes/blowfish/layouts/partials/extend-head.html</code>）会遇到子模块冲突</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">下列子模组路径所包含的修改在任何远程源中都找不到：
+</span></span><span class="line"><span class="cl">  themes/blowfish
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">请尝试
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">	git push --recurse-submodules<span class="o">=</span>on-demand
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">或者进入到子目录执行
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">	git push
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">以推送至远程。
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">致命错误：正在终止。
+</span></span><span class="line"><span class="cl">~/文/my-blog <span class="o">(</span>main<span class="p">|</span>↑1<span class="p">|</span>✔<span class="o">)</span> <span class="o">[</span>128<span class="o">]</span>$ 
+</span></span></code></pre></div><p>你有两个选择:</p>
+<p><strong>选项 A</strong>: 保留你的字体修改,推送到子模块的 fork/分支</p>
+<p><strong>选项 B</strong>: 删除子模块，把字体修改直接保存到主仓库中,而不是通过子模块</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># 1. 回到主仓库根目录</span>
+</span></span><span class="line"><span class="cl"><span class="nb">cd</span> ~/文/my-blog
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 2. 移除子模块配置(但保留文件)</span>
+</span></span><span class="line"><span class="cl">git rm --cached themes/blowfish
+</span></span><span class="line"><span class="cl">rm -rf .git/modules/themes/blowfish
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 3. 编辑 .gitmodules 文件,删除 blowfish 相关配置</span>
+</span></span><span class="line"><span class="cl">nano .gitmodules  <span class="c1"># 或用你喜欢的编辑器删除 blowfish 部分</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 4. 如果 .gitmodules 为空,删除它</span>
+</span></span><span class="line"><span class="cl">rm .gitmodules  <span class="c1"># 如果没有其他子模块的话</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 5. 将 themes/blowfish 作为普通目录添加</span>
+</span></span><span class="line"><span class="cl">git add themes/blowfish
+</span></span><span class="line"><span class="cl">git add .gitmodules  <span class="c1"># 如果修改了的话</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 6. 提交更改</span>
+</span></span><span class="line"><span class="cl">git commit -m <span class="s2">&#34;Convert blowfish theme from submodule to regular directory&#34;</span>
+</span></span><span class="line"><span class="cl">git push
 </span></span></code></pre></div>
           
           

@@ -2,7 +2,7 @@
 date = '2025-08-05'
 draft = false
 title = 'btrfs压缩、空间占用变大'
-tags = ["linux", "blog"]
+tags = ["linux"]
 +++
 
 

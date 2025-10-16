@@ -2,7 +2,7 @@
 date = '2025-08-04'
 draft = false
 title = '让KDE自动挂载各个分区'
-tags = ["linux", "blog"]
+tags = ["linux"]
 +++
 
 ## 1. 前景提要

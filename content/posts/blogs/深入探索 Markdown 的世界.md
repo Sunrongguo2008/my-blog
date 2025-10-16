@@ -2,9 +2,9 @@
 date = '2025-10-03'
 draft = false
 title = '深入探索 Markdown 的世界'
-tags = ["测试"]
+tags = ["blog"]
 +++
-
+{{< alert "circle-info" >}}本文用于测试网站的MD渲染样式{{< /alert  >}}
 > "简洁是智慧的灵魂。" —— 莎士比亚
 
 ## 引言

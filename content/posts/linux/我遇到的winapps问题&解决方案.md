@@ -2,7 +2,7 @@
 date = '2025-08-06'
 draft = false
 title = '我遇到的winapps问题&解决方案'
-tags = ["linux", "blog"]
+tags = ["linux"]
 +++
 
 

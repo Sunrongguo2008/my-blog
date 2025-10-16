@@ -2,7 +2,7 @@
 date = '2025-08-07'
 draft = false
 title = 'btrfs下不显示timeshift创建的快照／创建快照失败'
-tags = ["linux", "blog"]
+tags = ["linux"]
 +++
 
 

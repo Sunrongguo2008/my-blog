@@ -2,7 +2,7 @@
 date = '2025-08-03'
 draft = false
 title = 'linux开机黑屏的一种解决方案'
-tags = ["linux", "blog"]
+tags = ["linux"]
 +++
 ## 1. 特点
 

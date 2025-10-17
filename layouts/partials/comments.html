@@ -13,8 +13,16 @@
       el: '#waline',
       serverURL: 'https://comment.sun-ong.top/',
       lang: 'zh-CN',
-      locale: { placeholder: '畅所欲言吧~' },
+      locale: { placeholder: '畅所欲言吧~(不过1分钟内只能发送1条评论哦😊)' },
       wordLimit: 500,
+        reaction: [
+        'https://unpkg.com/@waline/emojis@1.2.0/bmoji/bmoji_unavailble_doge.png',
+        'https://unpkg.com/@waline/emojis@1.2.0/bmoji/bmoji_call.png',
+        'https://unpkg.com/@waline/emojis@1.2.0/bmoji/bmoji_hmm.png',
+        'https://unpkg.com/@waline/emojis@1.2.0/bmoji/bmoji_not_open.png',
+        'https://unpkg.com/@waline/emojis@1.2.0/bmoji/bmoji_heihei.png',
+        'https://unpkg.com/@waline/emojis@1.2.0/bmoji/bmoji_sad.png',
+  ],
       search: false,
       pageview: true,
       emoji: [ // 表情包，不需要的直接注释或者删除
@@ -127,5 +135,18 @@
         /* 信息块的边框 */
         --waline-info-border: 1px solid #d3d3d3;
       }
+  .wl-editor {  
+  width: calc(100% - 3em);  /* 之前的编辑区不知道为什么宽度超出了，所以设置了这个*/
+}  
+input:focus {  /* 去掉点击昵称等输入框时出现的蓝色边框*/
+  outline: none;  
+  border: 0;  
+  box-shadow: none;  
+}  
+textarea:focus {  /* 去掉点击评论正文输入框时出现的蓝色边框*/
+  outline: none;  
+  border: 0;  
+  box-shadow: none;  
+}
     </style>
 </body>

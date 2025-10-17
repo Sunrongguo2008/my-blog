@@ -1,4 +1,5 @@
+
 [submodule "themes/blowfish"]
 	path = themes/blowfish
 	url = https://github.com/Sunrongguo2008/blowfish.git
-	branch = main
+	branch = blog

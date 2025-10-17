@@ -4,8 +4,8 @@ draft = false
 title = 'Blowfish 文档外自定义指南'
 tags = ["blog"]
 +++
-## 0.用[Blowfish](https://blowfish.page/zh-cn/)创建了博客！泰裤辣！😄
-## 1.博客修改
+## 1 用[Blowfish](https://blowfish.page/zh-cn/)创建了博客！泰裤辣！😄
+## 2 博客修改
 {{< alert "circle-info" >}}
 所有例子中，`/`指主仓库根目录
 
@@ -13,7 +13,7 @@ tags = ["blog"]
 
 {{< /alert  >}}
 
-### 1.1修改侧栏(TOC)和标题颜色
+### 2.1 修改侧栏(TOC)和标题颜色
 效果：
 ![image.png](https://cdn.jsdelivr.net/gh/Sunrongguo2008/picture/obsidian/20251016224355331.png)
 新建 `/assets/css/custom.css`
@@ -79,11 +79,11 @@ tags = ["blog"]
 .dark .toc ul ul ul ul ul ul li a { color: #a78bfa !important; } /* H6对应浅紫色 */
 
 ```
-### 1.2字体修改
-#### 1.2.1优点
+### 2.2 字体修改
+#### 2.2.1 优点
 此方法和文档中的相比，能让访问者从国内第三方网站下载字体，提高字体加载速率
 
-#### 1.2.2操作方法
+#### 2.2.2 操作方法
 
 从网站找到代码，比如：https://fonts.zeoseven.com/items/442/#embed
 
@@ -147,7 +147,7 @@ code, kbd, samp, pre {
 </style>
 ```
 
-#### 1.2.3注意事项
+#### 2.2.3 注意事项
 如果你用git下载/管理的blowfish主题，修改`/themes/blowfish`（添加了`/themes/blowfish/layouts/partials/extend-head.html`）会遇到子模块冲突
 ```bash
 下列子模组路径所包含的修改在任何远程源中都找不到：
@@ -194,3 +194,44 @@ git add .gitmodules  # 如果修改了的话
 # 6. 提交更改
 git commit -m "Convert blowfish theme from submodule to regular directory"
 git push
+```
+
+### 2.3 字体大小修改
+[文档](https://blowfish.page/zh-cn/docs/advanced-customisation/#%E8%B0%83%E6%95%B4%E5%AD%97%E4%BD%93%E5%A4%A7%E5%B0%8F) 有云：
+>我们也提供更改网站的字体大小的示例。 Blowfish 使这一切变得简单，因为它在整个主题中使用源自基本 HTML 语言的缩放字体大小方法。默认情况下，Tailwind 将默认大小设置为 `12pt` ，但您可以将其更改为喜欢的大小。
+>
+>参考[上面的说明]({{< ref "#overriding-the-stylesheet" >}}) 创建一个 `custom.css` 文件并添加以下 CSS 声明：
+>
+> ```css
+>/* Increase the default font size */
+>html {
+>  font-size: 13pt;
+>}
+>```
+>
+>只需更改此值，您网站上的所有字体大小都将调整为此新大小。因此，要增加使用的整体字体大小，请将该值设置为大于 `12pt` 。同样，要减小字体大小，请将值设置为小于 `12pt` 。
+
+我尝试了发现：主页字体调整了，但是博文字体大小未改变
+
+我的方案是添加
+```CSS
+/* 只针对文章内容提高文字大小，默认1rem */  
+.prose {  
+  font-size: 1.1rem;  
+}
+```
+### 2.4 avif支持
+你猜我为啥用avif
+![image.png](https://cdn.jsdelivr.net/gh/Sunrongguo2008/picture/obsidian/20251017192758252.png)
+因为hugo对avif图片调节不完善，所以改成true增强AVIF支持：
+```toml
+#/config/_default/params.toml
+disableImageOptimization = true
+disableImageOptimizationMD = false #和上面的类似，改成AVIF增强AVIF支持
+```
+`disableImageOptimization`对网站有效（比如我的博客的背景图）
+
+`disableImageOptimizationMD`只针对博文文本有效
+
+我true了`disableImageOptimization`似乎就对整个网站生效了，就这样吧。
+

@@ -20,7 +20,7 @@ robots = "all"
 enableRobotsTXT = true
 
 disableImageOptimization = true
-disableImageOptimizationMD = false #和上面的类似，改成AVIF增强AVIF支持
+disableImageOptimizationMD = false #和上面的类似，改成true增强AVIF支持
 disableTextInHeader = false
 # backgroundImageWidth = 1200
 

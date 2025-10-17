@@ -67,5 +67,4 @@ enableEmoji = true
       name = 'fragmentrefs'
       type = 'fragments'
       weight = 10
-[security.http]
-  mediaTypes = ['^image/avif$']
+

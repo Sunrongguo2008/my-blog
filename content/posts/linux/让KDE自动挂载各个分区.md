@@ -9,8 +9,7 @@ tags = ["linux"]
 
 首先，KDE 有这个界面
 
-![](https://cdn.jsdelivr.net/gh/Sunrgongguo2008/picture/obsidian/202510030927580.png)
-
+![](https://cdn.jsdelivr.net/gh/Sunrongguo2008/picture/obsidian/202510030927580.png)
 但是用过就会知道，即使你都勾选上了，它照样不会开机自动挂载
 
 [forum.ubuntu.com.cn/viewtopic.php?t=50539](https://forum.ubuntu.com.cn/viewtopic.php?t=50539) 提及了这个问题，虽然没有提到治本的解决方法，但是一个哥们提醒了我：

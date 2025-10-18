@@ -8,9 +8,7 @@ tags = ["blog"]
 ## 2 博客修改
 {{< alert "circle-info" >}}
 所有例子中，`/`指主仓库根目录
-
 我的网站目录在`~/文/my-blog` ，因此`/themes/blowfish/`指的是`~/文/my-blog/themes/blowfish/`
-
 {{< /alert  >}}
 
 ### 2.1 修改侧栏(TOC)和标题颜色
@@ -234,4 +232,74 @@ disableImageOptimizationMD = false #和上面的类似，改成AVIF增强AVIF支
 `disableImageOptimizationMD`只针对博文文本有效
 
 我true了`disableImageOptimization`似乎就对整个网站生效了，就这样吧。
+### 2.5 评论区
+[配置指南](https://www.hetong-re4per.com/posts/use-waline-comment-on-hugo/)  
+我修改了些许配置，见github  
+还get到了`网址拆分`这个功能（见博客内文章）
+### 2.6 网站访问数统计
+#### 2.6.1 页头显示
+效果如下：
+![image.png](https://cdn.jsdelivr.net/gh/Sunrongguo2008/picture/obsidian/20251018190245278.png)
 
+这个组件的行为是由`/themes/blowfish/layouts/partials/meta/views.html`决定的，默认是使用Firebase的，但是Firebase国内访问不了，遂换成[Vercount](https://cn.vercount.one/)（这个能显示网站访问数 但是 不能显示喜欢数，但对我来说够了）
+
+`/themes/blowfish/layouts/partials/meta/views.html`复制到`/layouts/partials/meta/views.html`
+，这样会让blowfish读取后者而不是前者，从而实现自定义
+
+完成复制操作以后，修改`views.html`内容，见 https://github.com/Sunrongguo2008/my-blog/blob/main/layouts/partials/meta/views.html 。这样会让`views.html`在实现原有的样式（眼睛+动画）的程度下，将Firebase替换为Vercount
+
+编辑`/config/_default/params.toml`，把你想要的部分的`showViews`改成true
+{{< alert "circle-info" >}}
+[taxonomy]管理www.example.com/tags/ 域名  
+[term]管理www.example.com/tags/xxx/ 等域名  
+[list]管理www.example.com/posts/ 域名
+{{< /alert  >}}
+
+**⚠️注意：**
+{{< alert  >}}
+修改`views.html`后，每个页面只能显示一个网站访问数，其他无法加载。而在"Posts" "最近的文章" 等页面，[article]下的`showViews`打开以后，会统统显示，导致异常。所以[article]下的`showViews`请false。否则：
+![image.png](https://cdn.jsdelivr.net/gh/Sunrongguo2008/picture/obsidian/20251018202928272.png)
+**（😊别担心，后文有解决方法）**
+{{< /alert >}}
+#### 2.6.2 页尾显示
+效果如下：
+![image.png](https://cdn.jsdelivr.net/gh/Sunrongguo2008/picture/obsidian/20251018204427205.png)
+新建`/layouts/partials/extend-footer.html`并写入：
+```html
+<hr>
+<!-- Vercount浏览量组件 -->
+<script defer src="https://events.vercount.one/js"></script>
+<div class="flex flex-wrap gap-4 justify-center items-center text-sm text-neutral-500 dark:text-neutral-400">
+<span>📊 总访问 <span id="busuanzi_value_site_pv">-</span> 次</span>
+<span>•</span>
+<span>👥 总访客 <span id="busuanzi_value_site_uv">-</span> 人</span>
+<span>•</span>
+</div>
+```
+{{< alert "circle-info" >}}
+`views.html`定义了“本页访问量”，加上前文说过的“每个页面只能显示一个网站访问数”。所以这里的`extend-footer.html`没有定义“本页访问量”
+{{< /alert  >}}
+#### 2.6.3 "页头显示"的遗留问题解决
+>修改`views.html`后，每个页面只能显示一个网站访问数，其他无法加载。而在"Posts" "最近的文章" 等页面，[article]下的`showViews`打开以后，会统统显示，导致异常。所以[article]下的`showViews`请false。
+
+过来解决！
+
+我们不使用[article]下的`showViews`，而是自定义一个功能一样的模块，只在正文上出现而不在"Posts" "最近的文章"出现即可
+
+`/themes/blowfish/layouts/_default/single.html`复制到
+
+打开`/layouts/_default/single.html`，查找
+```html
+      <div class="mt-1 mb-6 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
+        {{ partial "article-meta/basic.html" (dict "context" . "scope" "single") }}
+      </div>
+```
+替换为以下内容即可
+```html
+div class="flex flex-row flex-wrap items-center">
+{{ partial "article-meta/basic.html" (dict "context" . "scope" "single") }}
+<span class="px-2 text-primary-500">·</span>
+{{ partial "/meta/views.html"}}
+<!-- [INFO]此处调用了views.html并模仿软主题加了蓝·-->
+</div>
+```

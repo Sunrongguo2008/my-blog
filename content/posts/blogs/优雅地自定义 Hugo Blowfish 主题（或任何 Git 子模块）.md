@@ -7,7 +7,7 @@ description = "教你如何优雅地自定义 Hugo Blowfish 主题：通过 Fork
 +++
 
 {{< alert "circle-info" >}}少数内容由AI生成{{< /alert  >}}
-## 前言
+## 1 前言
 
 使用 Hugo 的 Blowfish 主题时，我们经常需要调整一些样式、字体或配置文件，以满足个性化需求。  
 然而，当主题是以 **Git 子模块（submodule）** 的形式存在时，直接修改主题文件会带来一个常见问题：  
@@ -20,7 +20,7 @@ description = "教你如何优雅地自定义 Hugo Blowfish 主题：通过 Fork
 
 ---
 
-## 问题场景
+## 2 问题场景
 
 假设你修改了 Blowfish 主题（如调整字体），随后在推送主仓库时遇到错误：
 
@@ -54,7 +54,7 @@ description = "教你如何优雅地自定义 Hugo Blowfish 主题：通过 Fork
 
 ---
 
-## 解决方案：Fork 并建立自定义子模块
+## 3 解决方案：Fork 并建立自定义子模块
 
 核心思路是：
 
@@ -70,7 +70,7 @@ description = "教你如何优雅地自定义 Hugo Blowfish 主题：通过 Fork
 
 ---
 
-### 第一步：检查当前子模块状态
+### 3.1 第一步：检查当前子模块状态
 
 进入主题目录，确认修改情况：
 
@@ -95,7 +95,7 @@ d0db9190 (origin/main, origin/HEAD) fix user.json
 
 ---
 
-### 第二步：Fork 官方主题仓库
+### 3.2 第二步：Fork 官方主题仓库
 
 1. 打开 Blowfish 官方仓库  
     [https://github.com/nunocoracao/blowfish](https://github.com/nunocoracao/blowfish)
@@ -107,7 +107,7 @@ d0db9190 (origin/main, origin/HEAD) fix user.json
 
 ---
 
-### 第三步：配置子模块使用你的 Fork
+### 3.3 第三步：配置子模块使用你的 Fork
 
 在子模块目录中执行以下命令（这里以`custom-font`为分支名称）：
 
@@ -127,7 +127,7 @@ git push myfork custom-font
 
 ---
 
-### 第四步：让主仓库指向你的 Fork
+### 3.4 第四步：让主仓库指向你的 Fork
 
 回到 Hugo 博客根目录：
 
@@ -153,7 +153,7 @@ git remote set-url origin https://github.com/你的用户名/blowfish.git
 
 ---
 
-### 第五步：提交并推送修改
+### 3.5 第五步：提交并推送修改
 
 ```bash
 cd ../..
@@ -175,12 +175,12 @@ git push
 
 ---
 
-## 主题更新策略
+## 4 主题更新策略
 
 有了自己的 Fork 后，你可以随时同步官方更新，而不丢失自定义内容。
 
 
-### 推荐方法：合并上游更新
+### 4.1 推荐方法：合并上游更新
 
 ```bash
 cd themes/blowfish
@@ -194,7 +194,7 @@ git push origin custom-font
 
 
 
-### 其他方法：使用变基保持线性历史
+### 4.2 其他方法：使用变基保持线性历史
 
 ```bash
 cd themes/blowfish
@@ -206,9 +206,9 @@ git push --force origin custom-font
 适合对 Git 操作较熟悉的用户，能保持干净的历史，但注意变基会改写提交记录。
 
 
-## F&Q
+## 5 F&Q
 
-### 如何查看上游更新？
+### 5.1 如何查看上游更新？
 
 ```bash
 cd themes/blowfish
@@ -216,7 +216,7 @@ git fetch upstream
 git log HEAD..upstream/main --oneline
 ```
 
-### 如何测试更新是否正常？
+### 5.2 如何测试更新是否正常？
 
 ```bash
 hugo server -D
@@ -224,7 +224,7 @@ hugo server -D
 
 确认主题在本地运行正常后再推送。
 
-### 如何回退到官方版本？
+### 5.3 如何回退到官方版本？
 
 ```bash
 cd themes/blowfish
@@ -238,7 +238,7 @@ git push
 
 ---
 
-## 最佳实践建议
+## 6 最佳实践建议
 
 1. **定期同步上游**：每月更新一次主题，防止版本落后。
     
@@ -253,7 +253,7 @@ git push
 
 ---
 
-## 总结
+## 7 总结
 
 通过 Fork 子模块的方式，我们可以：
 

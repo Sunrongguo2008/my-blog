@@ -1,0 +1,67 @@
+<!-- Vercount浏览量组件 -->
+<script defer src="https://events.vercount.one/js"></script>
+<span class="pv-wrapper">
+  <span id="busuanzi_value_page_pv" class="busuanzi-loading">加载中...</span>
+  <span class="pv-icon">
+    {{ partial "icon.html" "eye" }}
+  </span>
+</span>
+<style>
+/* Flexbox 容器 */
+.pv-wrapper {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+/* 加载状态样式 */
+.busuanzi-loading {
+  display: inline-block;
+  color: transparent;
+  max-height: 0.75rem;
+  border-radius: 9999px;
+  background-color: rgb(212 212 212);
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  min-width: 2rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  .busuanzi-loading {
+    background-color: rgb(163 163 163);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+/* 图标样式 */
+.pv-icon svg {
+  display: block;
+  width: 1em;
+  height: 1em;
+}
+</style>
+
+<script>
+(function() {
+  const pvElement = document.getElementById('busuanzi_value_page_pv');
+  if (!pvElement) return;
+
+  const observer = new MutationObserver(function(mutations) {
+    mutations.forEach(function(mutation) {
+      const target = mutation.target;
+      if (target.textContent && target.textContent !== '加载中...') {
+        target.classList.remove('busuanzi-loading');
+      }
+    });
+  });
+
+  observer.observe(pvElement, {
+    childList: true,
+    characterData: true,
+    subtree: true
+  });
+})();
+</script>

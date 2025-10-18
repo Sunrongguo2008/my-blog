@@ -1,0 +1,42 @@
+<!--导入LXGW WenKai Mono字体-->
+<link rel="preload" as="style" crossorigin
+    href="https://fontsapi.zeoseven.com/292/medium/result.css"
+    onload="this.rel='stylesheet'"
+    onerror="this.href='https://fontsapi-storage.zeoseven.com/292/medium/result.css'" />
+<noscript>
+    <link rel="stylesheet" href="https://fontsapi.zeoseven.com/292/medium/result.css" />
+</noscript>
+
+<!--导入Maple Mono NF-CN字体-->
+<link rel="preload" as="style" crossorigin
+    href="https://fontsapi.zeoseven.com/442/main/result.css"
+    onload="this.rel='stylesheet'"
+    onerror="this.href='https://fontsapi-storage.zeoseven.com/442/main/result.css'" />
+<noscript>
+    <link rel="stylesheet" href="https://fontsapi.zeoseven.com/442/main/result.css" />
+</noscript>
+
+
+<style>
+/*
+无需专门导入字体，让所有英文显示为Maple Mono NF-CN字体
+@font-face {
+    font-family: "ZSFT-ENMin-442";
+    src: url("https://fontsapi.zeoseven.com/442/main.woff2") format('woff2'),
+        url("https://fontsapi-storage.zeoseven.com/442/main.woff2") format('woff2');
+    unicode-range: U+0061-007A, U+0041-005A, U+0030-0039, U+002E, U+002C, U+0021, U+003F, U+003A, U+003B, U+002D;
+}
+*/
+
+/* (需专门导入字体)让所有正文显示为LXGW字体 */
+    body {
+        font-family: "LXGW WenKai";
+        font-weight: normal;
+    }
+
+/* (需专门导入字体)让所有代码块显示为Maple Mono NF-CN字体 */
+code, kbd, samp, pre {
+    font-family: "Maple Mono NF CN";
+}
+
+</style>

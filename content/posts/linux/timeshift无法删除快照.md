@@ -5,7 +5,7 @@ title = 'timeshift无法删除快照'
 tags = ["linux"]
 +++
 
-## 发现问题
+## 1 发现问题
 
 ```bash
 $ sudo timeshift --list #列出快照
@@ -53,7 +53,7 @@ ls: 无法访问 '/run/timeshift/47326/backup/timeshift-btrfs/snapshots/2025-08-
 
 **问题发现了：快照目录在文件系统中已经不存在了，但是 Timeshift 仍然认为它存在。这是一个典型的 Timeshift 状态与实际文件系统不一致的问题。这说明 Timeshift 的内部数据库与实际文件系统状态不同步。**
 
-## 解决问题
+## 2 解决问题
 
 使用 `sudo timeshift --list`
 
